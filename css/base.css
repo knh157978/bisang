@@ -21,17 +21,20 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;	
 	font-family: 'NanumSquare','Nanum Gothic';
-	font-weight: 400;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html,body{
+	width: 100%;
+}
 body {
 	line-height: 1;
 	font-family: 'NanumSquare','Nanum Gothic';
-	font-weight: 400;
+	
 }
 ol, ul {
 	list-style: none;
@@ -51,8 +54,12 @@ table {
 input,select{
 	line-height: 1;
 	font-family: 'NanumSquare';
-	font-weight: 400;
+
 }
 img{
 	width: 100%;
+}
+
+a,a:hover,a:visited,a:link{
+	text-decoration: none;
 }
