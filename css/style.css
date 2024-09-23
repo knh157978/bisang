@@ -1693,6 +1693,20 @@ border-radius: 44px;
 
 
 /**문제풀이**/
+html,
+body {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+body.bg_test {
+    background: url(../images/bg_test_cir.png) #f6f6fa no-repeat;
+    background-size: cover;
+}
+
+
+
 /********** HEADER + CONTENTS 기본레이아웃 **********/
 .wrap_test {
     position: relative;
@@ -1860,41 +1874,6 @@ border-radius: 44px;
 /* 464px = 50px(전체 상하여백) X 2 + 120px(헤더높이) + 30px(헤더 바텀 마진) 
 + 120px (test_board 박스 상하 여백) + 64px(하단버튼높이) + 30px(버튼상단여백)*/
 
-.wrap_contestns {
-    position: relative;
-    padding: 0 120px;
-}
-
-.wrap_contestns .btn {margin-bottom: 25px; text-align: right;}
-
-.whole_list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px 35px;
-}
-
-.whole_list li {
-    position: relative;
-    overflow: hidden;
-    width: calc(20% - 28px);
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 10px;
-    padding: 0 0 10.5%;
-}
-
-.whole_list li a {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top:0; left:0;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-}
-.whole_list li a * {vertical-align: middle;}
-.whole_list li a img {display: inline-block;}
-
 
 .qna::after {
     display: block;
@@ -1942,7 +1921,71 @@ border-radius: 44px;
     padding: 0 15%;
 }
 
+.wrap_contestns {
+    position: relative;
+    padding: 0 120px;
+}
 
+.wrap_contestns .btn {
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.whole_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 35px;
+}
+
+.whole_list li {
+    position: relative;
+    overflow: hidden;
+    width: calc(20% - 28px);
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    padding: 0 0 15% 0;
+}
+
+.whole_list li.on {
+    border: 3px solid #2395FF;
+    border-radius: 10px;
+}
+
+.whole_list li.on::before {
+    z-index: 99999;
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 21px;
+    height: 12px;
+    background: url(../images/ico_on.svg) no-repeat;
+    content: '';
+}
+
+.whole_list li.on::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2395FF;
+    opacity: .2;
+    content: '';
+}
+
+.whole_list li a {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+}
 
 
 
@@ -2208,7 +2251,7 @@ border-radius: 44px;
         margin-left: 5px;
     }
 
-.btn_view {
+    .btn_view {
         height: 30px;
         padding: 0 10px;
         border-radius: 15px;
@@ -2218,8 +2261,8 @@ border-radius: 44px;
     }
 
     .test_title .etc_info .btn_alert {
-        height: 30px;z
-        padding: 0 10px;
+        height: 30px;
+        z padding: 0 10px;
         border-radius: 15px;
         font-weight: 400;
         font-size: 16px;
@@ -2304,6 +2347,16 @@ border-radius: 44px;
         padding: 0 10%;
     }
 
+    .wrap_contestns {
+        padding: 0 30px;
+    }
+
+    .whole_list li {
+        width: calc(33% - 23.3px);
+        padding: 0 0 25% 0;
+    }
+
+
 
 
 
@@ -2376,21 +2429,22 @@ border-radius: 44px;
 @media (max-width: 576px) {
     .notice_title {
         padding: 20px 0 15px 40px;
-        font-size: 18px;;
+        font-size: 18px;
+        ;
     }
-    
+
     .etc_info.type2 {
         position: absolute;
         top: initial;
         right: initial;
-        left:60px;
+        left: 60px;
         transform: initial;
         padding: 0;
-        bottom:15px;
+        bottom: 15px;
     }
 
     .test_title .btn_prev {
-        top:20px;
+        top: 20px;
         transform: initial;
     }
 
@@ -2436,143 +2490,13 @@ border-radius: 44px;
         padding: 0 0;
     }
 
-    .endWrap{
-        text-align: center;
-        background: url(../images/bg_end.png) 50% 100% no-repeat;
-       height: 100%;
-       background-size:cover ;
-       position: relative;
+    .whole_list {
+        gap: 20px 20px;
     }
-    .endWrap .name_txt{
-        text-align: center;
-        font-size: 34px;
-        color: #1C1C1C;
-        padding: 50px 0 0 0
-    }
-    .endWrap .name_txt .name{
-        color: #FF732A;
-        font-size: 48px;
-        font-weight: 700;
-    }
-    .endWrap .end_txt{
-        margin-top: 40px;
-        font-size: 34px;
-        color: #1C1C1C;
-        font-weight: 700;
-    }
-    .endWrap p{
-        color: #1C1C1C;
-        font-size: 48px;
-        font-weight: 700;
-        margin-top: 50px;
-    }
-    .endWrap .img_robot{
-        width: 290px;
-       margin: 60px auto 60px;
-    }
-    .endWrap  ul{
-        font-size: 34px;
-        color: #1C1C1C;
-    
-    }
-    .endWrap  ul li {
-        margin-bottom: 40px;
-    }
-    .endWrap  ul li::before{
-    display: inline-block;
-    content: '';
-    background: url(../images/bul_chk.png) no-repeat;
-    vertical-align: middle;
-    margin-top: -4px;
-    margin-right: 10px;
-    width: 22px;
-    height: 12px;
-    }
-    
-    @media screen and (max-width:1024px){
-        .endWrap{
-            background-size:120%;
-            padding-bottom: 30px;
-        }
-    
-    }
-    
-    @media screen and (max-width:800px){
-        .endWrap{
-            background-size:120%;
-        }
-        .endWrap ul{
-            font-size: 30px;
-        }
-    }
-    
-    @media screen and (max-width:640px){
-        .endWrap{
-            padding: 0 20px;
-        }
-        .endWrap ul{
-            font-size: 20px;
-        }
-        .endWrap .name_txt{
-            font-size: 28px;
-        }
-        .endWrap .name_txt .name{
-            font-size: 40px;
-        }
-        .endWrap .end_txt{
-            font-size: 28px;
-            margin-top: 25px;
-        }
-        .endWrap p {
-            font-size: 40px;
-            margin-top: 30px;
-        }
-        .endWrap .img_robot {
-            width: 220px;
-            margin: 40px auto;
-        }
-        .endWrap .name_txt .block{
-            display: block;
-            margin-top: 10px;
-        }
-        
-    }
-    
-    @media screen and (max-width:480px){
-        .endWrap .name_txt {
-            padding-top: 30px;
-        }
-        .endWrap .img_robot {
-            width: 180px;
-            margin: 30px auto;
-        }
-        .endWrap ul li span{
-            display: block;
-        }
-        .endWrap ul {
-            font-size: 18px;
-            
-        }
-        .endWrap p {
-            font-size: 30px;
-            margin-top: 25px;
-        }
-        .endWrap .name_txt .name {
-            font-size: 30px;
-        }
-        .endWrap .name_txt {
-            font-size: 23px;
-        }
-        .endWrap .end_txt {
-            font-size: 23px;
-            margin-top: 20px;
-        }
-    }
-    
-    @media screen and (max-height:640px){
-        .endWrap  ul{
-            padding-bottom: 30px;
-        }
+
+    .whole_list li {
+        width: calc(50% - 10px);
+        padding: 0 0 38% 0;
     }
 
 
