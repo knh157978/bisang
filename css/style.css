@@ -614,6 +614,9 @@ text-indent: -30px;
  .accodion_pan{
     margin-bottom: 30px;
  }
+ .accodion_pan .chart{
+    margin-bottom: 20px;
+ }
  .btn_change{
     display: block;
     height: 80px;
@@ -824,7 +827,7 @@ transform: translate(-50%,-50%);
 }
 
 .bg_gray{
-    background: #f6f6fa;
+    background: #f6f6fa ;
 }
 .ico_robot_b{
     display: inline-block;
@@ -962,8 +965,8 @@ margin-bottom: 30px;
     left:30px;
     top:30px;
 }
-.invitation_wrap{
-    background: url(../images/bg_Invitation.png) no-repeat;
+.invitation_wrap{   
+    background: url(../images/bg_Invitation.png)  50% 100% no-repeat;
     background-size: cover;
     max-width: 768px;
     margin: 0 auto;
@@ -978,14 +981,17 @@ margin-bottom: 30px;
   width: 30px;
   height: 30px;
   background: url(../images/btn_close.png) no-repeat;
+  z-index: 10;
 
 }
 .invite_con{
-  position: absolute;
-  top:50%;
-  transform: translateY(-50%);
   text-align: center;
   width: 100%;
+  padding: 0 10px 30px 10px;
+
+}
+.invite_con .text_area{
+    padding-top: 17%;
 }
 .invitation_txt{
     margin: 0 auto;
@@ -1016,7 +1022,7 @@ border-radius: 44px;
     color: #1C1C1C;
     line-height: 1.6em;
 }
-.info_txt span{
+.info_txt .in_blue{
     font-weight: 700;
     color: #00B5E2;
 }
@@ -1438,6 +1444,10 @@ border-radius: 44px;
 }
 }
 @media screen and (max-width:548px){
+    .info_txt .block {
+       display: block;
+    }
+
     .tendency .tit {
         font-size: 30px !important;
     }
@@ -1507,8 +1517,22 @@ border-radius: 44px;
     .tag_area a {
         font-size: 15px;
     }
+    .invitation_wrap .btn_close{
+        right: 20px;
+        top:20px;
+        width:20px;
+        height: 20px;
+        background-size: 20px;
+    }
+    .invite_con .in_photo{
+        margin:30px auto 20px auto
+    }
+    .info_list{
+        margin: 30px auto 0 auto;
+    }
 }
 @media screen and (max-width:430px){
+    .info_txt {font-size: 20px;}
     .box_top {
         font-size: 18px;
     }
@@ -1607,6 +1631,16 @@ border-radius: 44px;
     .box_con>div {
         padding-top: 30px;
     }
+    .invite_con .tit {
+        font-size: 35px;
+    }
+    .info_txt{
+        font-size: 18px;
+    }
+    .info_list span {
+        margin-bottom: 20px;
+    }
+  
 }
 @media screen and (max-width:370px){
     .qa_list li{
@@ -1634,5 +1668,12 @@ border-radius: 44px;
         background-size: 230px;
         background-position-x:-40px ;
     }
-  
+   
+}
+
+@media screen and (orientation: landscape){
+    .invitation_wrap {
+        min-height:900px;
+    }
+
 }
