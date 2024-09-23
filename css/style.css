@@ -1686,3 +1686,139 @@ border-radius: 44px;
     }
 
 }
+
+.endWrap{
+    text-align: center;
+    background: url(../images/bg_end.png) 50% 100% no-repeat;
+   height: 100%;
+   background-size:cover ;
+   position: relative;
+}
+.endWrap .name_txt{
+    text-align: center;
+    font-size: 34px;
+    color: #1C1C1C;
+    padding: 50px 0 0 0
+}
+.endWrap .name_txt .name{
+    color: #FF732A;
+    font-size: 48px;
+    font-weight: 700;
+}
+.endWrap .end_txt{
+    margin-top: 40px;
+    font-size: 34px;
+    color: #1C1C1C;
+    font-weight: 700;
+}
+.endWrap p{
+    color: #1C1C1C;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.endWrap .img_robot{
+    width: 290px;
+   margin: 60px auto 60px;
+}
+.endWrap  ul{
+    font-size: 34px;
+    color: #1C1C1C;
+
+}
+.endWrap  ul li {
+    margin-bottom: 40px;
+}
+.endWrap  ul li::before{
+display: inline-block;
+content: '';
+background: url(../images/bul_chk.png) no-repeat;
+vertical-align: middle;
+margin-top: -4px;
+margin-right: 10px;
+width: 22px;
+height: 12px;
+}
+
+@media screen and (max-width:1024px){
+    .endWrap{
+        background-size:120%;
+        padding-bottom: 30px;
+    }
+    .endWrap  ul{
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .endWrap{
+        background-size:120%;
+    }
+    .endWrap ul{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .endWrap{
+        padding: 0 20px;
+    }
+    .endWrap ul{
+        font-size: 20px;
+    }
+    .endWrap .name_txt{
+        font-size: 28px;
+    }
+    .endWrap .name_txt .name{
+        font-size: 40px;
+    }
+    .endWrap .end_txt{
+        font-size: 28px;
+        margin-top: 25px;
+    }
+    .endWrap p {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .endWrap .img_robot {
+        width: 220px;
+        margin: 40px auto;
+    }
+    .endWrap .name_txt .block{
+        display: block;
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+    .endWrap .name_txt {
+        padding-top: 30px;
+    }
+    .endWrap .img_robot {
+        width: 180px;
+        margin: 30px auto;
+    }
+    .endWrap ul li span{
+        display: block;
+    }
+    .endWrap ul {
+        font-size: 18px;
+        
+    }
+    .endWrap p {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    .endWrap .name_txt .name {
+        font-size: 30px;
+    }
+    .endWrap .name_txt {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+    .endWrap .end_txt {
+        font-size: 23px;
+        margin-top: 20px;
+    }
+}
