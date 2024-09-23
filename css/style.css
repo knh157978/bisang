@@ -270,6 +270,7 @@
  background: #f6f6fa;
  padding-bottom: 100px;
  height: 100%;
+ min-height: 100%;
  position: relative;
 }
 .resultWrap * {
@@ -283,6 +284,7 @@
 }
 .resultWrap .result_area{
     margin: 0 120px;
+    padding-bottom: 100px;
 }
 .resultWrap .tit .util{
     position: absolute;
@@ -313,7 +315,7 @@
 .resultWrap .tit a.btn_share:before{
     display: inline-block;
     content: '';
-    background: url(../images/ico_share.png) no-repeat;
+    background: url(../images/ico_share.png)50% 50% no-repeat;
     width: 30px;
     height: 30px;
     margin: -4px  20px 0 0 ;
@@ -322,7 +324,7 @@
 .resultWrap .tit a.btn_invite:before{
     display: inline-block;
     content: '';
-    background: url(../images/ico_in.png) no-repeat;
+    background: url(../images/ico_in.png) 50% 50% no-repeat;
     width: 40px;
     height: 40px;
     margin: -4px 20px 0 0;
@@ -579,7 +581,7 @@ word-break: keep-all;
     background: #2395FF;
  }
  .box_right .accordion_head.on:after{
-    background: url(../images/arr_up.png) no-repeat;
+    background: url(../images/arr_up.png)  50% 50% no-repeat;
 }
 
  .box_right .accordion_head{
@@ -607,7 +609,7 @@ text-indent: -30px;
     top:50%;
     margin-top: -8px;
     right: 40px;
-    background: url(../images/arr_down.png) no-repeat;
+    background: url(../images/arr_down.png) 50% 50% no-repeat;
  }
  .accodion_pan{
     margin-bottom: 30px;
@@ -828,6 +830,7 @@ transform: translate(-50%,-50%);
     display: inline-block;
     width: 121px;
     margin-right: 50px;
+    flex-shrink: 0;
 }
 .box_top{
     display: flex;
@@ -865,8 +868,20 @@ transform: translate(-50%,-50%);
     box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
+    
     color: #aaa;
     font-size: 18px;
+ 
+}
+.footer_ai input {
+    color: #aaa;
+    font-size: 18px;
+    border: 0;
+    height: 47px;
+    width: calc(100% - 180px);
+}
+.footer_ai input::placeholder{
+    color: #aaa;
 }
 .ico_robot{
     display: inline-block;
@@ -899,8 +914,11 @@ color: #fff;
 font-size: 18px;
 font-weight: 700;
 height: 76px;
-line-height: 76px;
+display: flex;
+align-items: center;
 position: relative;
+padding-right: 100px;
+line-height: 1.35em;
 }
 .answer_list dt .photo{
     display: inline-block;
@@ -1062,8 +1080,9 @@ border-radius: 44px;
  }
 
 @media screen and (max-width:1560px){
+ 
     .resultWrap .tit{
-        font-size: 50px;
+        font-size:40px 
     }
     .resultWrap .tit a{
         font-size: 25px;
@@ -1073,6 +1092,7 @@ border-radius: 44px;
     .resultWrap .result_area{
         margin: 0 60px;
     }
+
 }
 @media screen and (max-width:1440px){
    
@@ -1092,6 +1112,9 @@ border-radius: 44px;
         font-size: 20px;
     }
     .info_eval dd{
+        width: calc(100% - 76px);
+    }
+    .info_eval dd:nth-of-type(3){
         width: calc(100% - 96px);
     }
     .box_con{
@@ -1106,9 +1129,13 @@ border-radius: 44px;
     .box_con>div:nth-child(2) {
         margin-left: 30px;
     }
+    .box_tendency {
+        background-position-x:-50px
+    }
 }
 
 @media screen and (max-width:1250px){
+    .tendency .tit{  margin-top: 0; }
     .tab_pannel{
         padding-top: 30px;
     }
@@ -1125,6 +1152,9 @@ border-radius: 44px;
     }
 }
 @media screen and (max-width:1180px){
+    .tendency .tit {
+        font-size: 35px !important;
+    }
     .box_con{
         padding:0 20px 50px 20px;
     }
@@ -1205,6 +1235,9 @@ border-radius: 44px;
     }
 }
 @media screen and (max-width:1024px){
+    .resultWrap .result_area{
+        padding-bottom: 50px;
+    }
     .resultWrap .tit{
         font-size: 40px;
     }
@@ -1223,12 +1256,23 @@ border-radius: 44px;
    .box_con>div:nth-child(2){
     margin-left: 0;
    }
+   .box_tendency {
+    background-position-x:0
+}
+.bubble {
+    right: 5%;
+}
+
 }
 
 @media screen and (max-width:880px){
   
     .resultWrap .tit{
         font-size:35px;
+        margin-top: 30px;
+    }
+    .tendency .tit {
+        margin-top: 0 !important;
     }
 }
 @media screen and (max-width:840px){
@@ -1259,4 +1303,336 @@ border-radius: 44px;
     .my_info>li span {
         display: inline-block;
     }
+}
+@media screen and (max-width:814px){
+    .resultWrap .tit{
+        font-size: 30px;
+    }
+    .resultWrap .tit a{
+        font-size: 15px;
+    }
+    .resultWrap .tit .util{
+        top:-8px
+    }
+}
+@media screen and (max-width:768px){
+    .box_ai{
+        width:90%;
+        padding: 30px;
+        max-height:calc(100% - 190px);
+        transform: translate(-50%, -53%);
+        overflow-y:auto ;
+    }
+    .ico_robot_b {
+        margin-right: 20px;
+        word-break: keep-all;
+    }
+    .box_top {
+        font-size: 25px;
+    }
+    .ico_robot {
+        margin-left: 20px;
+    }
+
+    .answer_list{
+        width: 95%;
+    }
+    .answer_list dt .time{
+        right: 20px;
+    }
+    .answer_list dt {
+        padding-right:80px;
+        font-size: 16px;
+    }
+    .answer_list dd{
+        font-size: 16px;
+        padding: 20px 20px 20px 80px;
+    }
+    .answer_list dd span{
+        left: 20px;
+        top:20px
+    }
+    .answer_list dt .time{
+        font-size: 15px;
+    }
+}
+@media screen and (max-height:725px){
+    .box_ai{
+        width:90%;
+        padding: 30px;
+        max-height:calc(100% - 190px);
+        transform: translate(-50%, -53%);
+        overflow-y:auto ;
+    }
+    .ico_robot_b {
+        margin-right: 20px;
+        word-break: keep-all;
+    }
+    .box_top {
+        font-size: 25px;
+    }
+    .ico_robot {
+        margin-left: 20px;
+    }
+
+}
+@media screen and (max-width:710px){
+    .resultWrap .tit .util a{
+       text-indent: -1000em;
+       width: 50px;
+       height: 50px;
+       padding: 0;
+       position: relative;
+    }
+    .resultWrap .tit .util a:before{
+        position: absolute;
+        left: 50%;
+        top:50%;
+         transform: translate(-50%, -35%);
+    }
+    .my_info>li{
+        padding: 0 15px;
+    }
+    .my_info>li:last-child{
+        padding: 0 15px;
+    }
+    .bubble {
+        right: 0;
+    }
+}
+@media screen and (max-width:670px){
+    .resultWrap .result_area{
+        margin: 0 20px;
+    }
+    .pop_share{
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    .box_tendency {
+        background-size: 340px;
+        background-position-x: -50px;
+        height:290px;
+    }
+    .bubble {
+        width: 55%;
+        padding: 20px;
+        border-radius: 40px;
+        word-break: break-all;
+    }
+ 
+}
+@media screen and (max-width:560px){
+    .pop_share {
+        height: 320px;
+    }
+.pop_share .sns_area span{
+    display: block;
+    margin-top: 20px;
+}
+.pop_share .url input {
+    width: calc(100% - 180px);
+}
+.pop_share .sns_area .blog{
+    margin-right: 0;
+}
+}
+@media screen and (max-width:548px){
+    .tendency .tit {
+        font-size: 30px !important;
+    }
+    .my_info>li:last-child{
+        font-size: 16px;
+    }
+    .my_info>li .standard dt{
+        font-size: 16px;
+    }
+    .my_info>li .standard dd{
+        font-size: 20px;
+    }
+    .info_eval dd{
+        width: calc(100% - 60px);
+    }
+    .info_eval dd:nth-of-type(3){
+        width: calc(100% - 73px);
+    }
+    .my_info>li:last-child{
+        padding: 0 10px;
+    }
+    .my_info>li .score{
+        font-size: 45px;
+    }
+    .my_info>li:first-child{
+        font-size: 40px;
+    }
+    .box_right .accordion_head{
+        margin-bottom: 20px;
+    }
+    .ico_robot_b {
+        width: 90px;
+        margin-right: 15px;
+    }
+    .box_top {
+        font-size: 20px;
+    }
+    .box_ai {
+        padding:20px;
+    }
+    .tag_area {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:480px){
+    .box_tendency {
+        background-size: 300px;
+        height: 250px;
+    }
+    .bubble {
+        width: 60%;
+    }
+    .resultWrap .tit{
+        font-size: 25px;
+        margin: 0;
+    }
+    .resultWrap .tit .util a{
+        width: 40px;
+        height: 40px;
+    }
+    .resultWrap .tit .util .btn_share:before{
+        background-size: 15px;
+    }
+    .resultWrap .tit a.btn_invite:before{
+        background-size:22px
+    }
+    .tag_area a {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:430px){
+    .box_top {
+        font-size: 18px;
+    }
+    .box_ai {
+        padding:15px;
+    }
+    .tendency .tit {
+        font-size: 25px !important;
+    }
+    .btn_qa:after{
+        display: none;
+    }
+    .box_con .review dt{
+        font-size: 25px;
+    }
+    .box_con .review dt a{
+        width: 140px;
+        right: 15px;
+    }
+    .box_con .review dt{
+        padding: 0 15px;
+    }
+    .box_con .review dd{
+        padding: 15px;
+        font-size: 15px;
+    }
+    .result_tab li{
+        font-size: 14px;
+    }
+    .qa_list li{
+        font-size: 18px;
+    }
+    .result_txt{
+        padding: 15px;
+    }
+    .btn_err{
+        font-size: 20px;
+    }
+    .box_con{
+        padding: 0 15px 40px 15px;
+    }
+    .info_eval{
+        display: block;
+    }
+    .info_eval dt,   .info_eval dd{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .info_eval dt:nth-of-type(3){
+        margin-bottom: 5px;
+    }
+    .info_eval dd{
+        margin-bottom: 10px;
+    }
+    .my_info>li{
+        height: 160px;
+    }
+    .box_right .accordion_head {
+        text-indent: -20px;
+    }
+    .box_right .accordion_head:after{
+        width: 20px;
+        background-size: 20px;
+        right: 20px;
+    }
+    .box_right .accordion_head.on:after{
+        width: 20px;
+        background-size: 20px;
+    }
+    .btn_change{
+        font-size: 20px;
+    }
+    .btn_change:after {
+        width: 37px;
+        height: 37px;
+        background-size: 37px;
+        margin-top: -18px;
+    }
+}
+@media screen and (max-width:400px){
+    .resultWrap .tit{
+        font-size: 20px;
+    }
+    .btn_qa {
+        height: 40px;
+        line-height: 40px;
+    }
+    .btn_qa:before{
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+    .resultWrap .result_area{
+        margin: 0 15px;
+    }
+    .box_con>div {
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width:370px){
+    .qa_list li{
+        font-size: 16px;
+    }
+    .qa_list li{
+        margin-bottom: 30px;
+    }
+    .result_txt{
+        font-size: 16px;
+    }
+    .box_right .accordion_head {
+        font-size: 16px;
+    }
+    .btn_qa {
+        font-size: 14px;
+    }
+    .resultWrap .result_area{
+        margin: 0 10px;
+    }
+    .tbl_err th,.tbl_err td{
+        font-size: 16px;
+    }
+    .box_tendency{
+        background-size: 230px;
+        background-position-x:-40px ;
+    }
+  
 }
