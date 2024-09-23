@@ -1,3 +1,6 @@
+.hdefault{
+    height: inherit;
+}
 .al_right{
     text-align: right;
 }
@@ -1745,9 +1748,7 @@ height: 12px;
         background-size:120%;
         padding-bottom: 30px;
     }
-    .endWrap  ul{
-        padding-bottom: 30px;
-    }
+
 }
 
 @media screen and (max-width:800px){
@@ -1819,5 +1820,11 @@ height: 12px;
     .endWrap .end_txt {
         font-size: 23px;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-height:640px){
+    .endWrap  ul{
+        padding-bottom: 30px;
     }
 }
