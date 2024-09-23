@@ -302,7 +302,7 @@
     display: inline-block;
     background: #fff;
     border-radius: 50px;
-    width: 276px;
+    padding: 0 25px;
     height: 82px;
     line-height: 82px;
     color:#000;
@@ -341,11 +341,12 @@ box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 
     align-items: center;
 }
 .my_info>li{
-    width: 25%;
+    width: 26%;
   margin:70px 0 40px;
   position: relative;
   height: 90px;
-  
+  display: flex;
+  align-items: center;
 }
 .my_info>li::after{
  display: block;
@@ -360,12 +361,17 @@ box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 
 .my_info>li:nth-child(4):after{
     display: none;
 }
-
+.my_info>li:nth-child(4){
+    width: 30%;
+}
 .my_info>li:first-child{
     text-align:center;
     color:#1C1C1C;
     font-size:64px;
     line-height: 90px;
+    width: 18%;
+    
+  justify-content: center;
 } 
 .my_info>li span{
     display: inline-block;
@@ -400,7 +406,6 @@ box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 
 .info_eval{
     display: flex;
     flex-wrap: wrap;
-    margin-top: -8px;
 }
 .info_eval dt,.info_eval dd{
     font-weight:700;
@@ -415,6 +420,9 @@ box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 
     color:#5C5C5C;
     max-width:110px ;
     margin-right: 10px;
+}
+.info_eval dt:nth-of-type(3),.info_eval dd:nth-of-type(3){
+    margin-bottom: 0;
 }
 .box_con{
     display: flex;
@@ -588,6 +596,7 @@ line-height: 60px;
 position: relative;
 cursor: pointer;
 margin-bottom: 30px;
+text-indent: -30px;
  }
  .box_right .accordion_head:after{
     display: block;
@@ -613,6 +622,7 @@ margin-bottom: 30px;
     text-align: center;
     border-radius: 50px;
     position: relative;
+    text-indent: -47px;
  }
  .btn_change:after{
     display: block;
@@ -1034,3 +1044,219 @@ border-radius: 44px;
     margin-right: 5px;
    margin-top: -4px;
  }
+ @media screen and (max-width:1845px) {
+    .my_info>li .standard{
+        padding: 0 20px;
+    }
+    .my_info>li:last-child{
+        padding: 0 20px;
+    }
+ }
+ @media screen and (max-width:1700px) {
+    .my_info>li .standard dt{
+        font-size: 25px;
+    }
+    .my_info>li .standard dd{
+        font-size: 30px;
+    }
+ }
+
+@media screen and (max-width:1560px){
+    .resultWrap .tit{
+        font-size: 50px;
+    }
+    .resultWrap .tit a{
+        font-size: 25px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .resultWrap .result_area{
+        margin: 0 60px;
+    }
+}
+@media screen and (max-width:1440px){
+   
+    .my_info>li{
+        margin: 50px 0 20px;
+    }
+    .my_info>li .score{
+        font-size: 60px;
+    }
+    .my_info>li .standard dt{
+        font-size: 20px;
+    }
+    .my_info>li .standard dd{
+        font-size: 25px;
+    }
+    .my_info>li:last-child{
+        font-size: 20px;
+    }
+    .info_eval dd{
+        width: calc(100% - 96px);
+    }
+    .box_con{
+        padding: 0 30px 50px 30px;
+    }
+    .box_con>div{
+        width: calc(50% - 30px);
+    }
+    .box_con>div:nth-child(1) {
+        margin-right: 30px;
+    }
+    .box_con>div:nth-child(2) {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .tab_pannel{
+        padding-top: 30px;
+    }
+    .my_info>li .standard dd {
+        margin-top: 10px;
+    }
+    
+    .my_info>li:first-child {
+        font-size: 55px;
+    }
+    .btn_change{font-size: 25px;}
+    .btn_qa{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1180px){
+    .box_con{
+        padding:0 20px 50px 20px;
+    }
+    .box_con>div{
+        width: calc(50% - 20px);
+    }
+    .box_con>div:nth-child(1) {
+        margin-right: 20px;
+    }
+    .box_con>div:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    .my_info>li{
+        width: 24%;
+    }
+    .my_info>li:last-child{
+        width: 34%;
+        padding: 0 10px;
+    }
+    .my_info>li span{
+        display: block;
+    }
+    .my_info>li .standard{
+        padding: 0 10px;
+    }
+    .resultWrap .result_area{
+        margin: 0 30px;
+    }
+    
+}
+@media screen and (max-width:1110px){
+    
+    .resultWrap .tit a{
+        font-size: 20px;
+    }
+    .resultWrap .tit a.btn_share:before{
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+        margin-right: 10px;
+    }
+    .resultWrap .tit a{
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+    }
+    .resultWrap .tit a.btn_invite:before{
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+        margin-right: 10px;
+    } 
+    .btn_qa{
+        font-size: 15px;
+    }
+    
+    .box_con .review dd{
+        padding: 20px;
+    }
+    .box_con .review dt{
+        padding: 0 20px;
+    }
+    .box_con .review dt a {
+        right: 20px;
+    }
+    .result_txt{
+        padding: 20px;
+    }
+    .result_tab li{
+        font-size: 16px;
+    }
+    .my_info>li:first-child{
+        font-size: 45px;
+    }
+    .my_info>li .score{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:1024px){
+    .resultWrap .tit{
+        font-size: 40px;
+    }
+    .resultWrap .tit .util{
+        top:-5px
+    }
+   .box_con{
+    display: block;
+   }
+   .box_con>div{
+    width: 100%;
+   }
+   .box_con>div:nth-child(1){
+    margin-right: 0;
+   }
+   .box_con>div:nth-child(2){
+    margin-left: 0;
+   }
+}
+
+@media screen and (max-width:880px){
+  
+    .resultWrap .tit{
+        font-size:35px;
+    }
+}
+@media screen and (max-width:840px){
+    .my_info>li:first-child{
+        width: 50%;
+    }
+    .my_info>li:last-child{
+        width: 50%; 
+        border: 0;
+        
+        padding: 0 30px;
+    }
+    .my_info>li:nth-child(3){
+
+        border: 0;
+    }
+    .my_info>li:nth-child(2)::after{
+        display: none;
+    }
+    .my_info>li{
+        width: 50%;
+        margin: 0;
+        border-bottom: 1px solid #1B1C1E;
+
+        height: 130px;
+        padding: 0 30px;
+    }
+    .my_info>li span {
+        display: inline-block;
+    }
+}
