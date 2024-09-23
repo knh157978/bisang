@@ -1502,7 +1502,7 @@ border-radius: 44px;
     }
     .resultWrap .tit{
         font-size: 25px;
-        margin: 0;
+        margin:20px 0 0 0;
     }
     .resultWrap .tit .util a{
         width: 40px;
@@ -1541,6 +1541,15 @@ border-radius: 44px;
     }
     .tendency .tit {
         font-size: 25px !important;
+    }
+    .box_tendency {
+        background-size: 250px;
+        height: 250px;
+        background-position-x: -30px;
+        background-position-y: 30px;
+    }
+    .bubble {
+        right: -10px;
     }
     .btn_qa:after{
         display: none;
