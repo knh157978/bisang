@@ -2888,6 +2888,13 @@ body.bg_test {
     color: #4863FF;
    padding-top: 7%;
 }
+.lgmWrap .input_info .info_txt .hello em{
+    font-style: normal;
+    display: inline-block;
+    font-size: 40px;    
+    color: #1C1C1C;
+    font-weight: 400;
+}
 .lgmWrap .btn_prev{
     display: block;
     position: absolute;
@@ -3059,11 +3066,78 @@ position: relative;
     color: #2E2F33;
     font-weight: 700;
 }
-
+.input_field.type1 {
+    width: 940px;
+    margin: 5.5vh auto 0 auto;
+    font-size: 0;
+}
+.input_field.type1 .fl1 select{
+    width: calc(50% - 45px);
+    margin-right: 90px;
+}
+.input_field.type1 .fl1 select:last-child{
+    margin-right: 0;
+}
 .fl2{
     margin-top: 20px;
     text-align: left;
 }
+.input_field.type1 .fl2 select{
+    background: #fff url(../images/sel_arr.png) no-repeat 98% 50%; 
+    width: 100%;
+}
+.input_field.type1 .fl2 .btn_select{
+    font-weight: 700;
+    font-size: 26px;
+    color: #1c1c1c;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    height: auto;
+    margin-left: 0;
+    line-height: normal;
+    cursor: pointer;
+}
+.input_field.type1 .fl2 .btn_select.on::after{
+    transform: rotate(180deg);
+}
+.input_field.type1 .fl2 .btn_select.on+.custom{
+    display: block;
+}
+.input_field.type1 .fl2 .btn_select::after{
+    display: block;
+    content: '';
+    position: absolute;
+    right: 20px;
+    top:50%;
+    background: url(../images/sel_arr.png) no-repeat;
+    width: 26px;
+    height: 21px;
+    background-size: 26px;
+    margin-top: -10px;
+}
+.input_field.type1 .fl2 .custom{
+    display: none;
+ background: #fff;
+ border-radius: 20px;
+ margin-top: 10px;
+ width: 100%;
+ border: 1px solid rgba(0,0,0,.1) ;
+ overflow: auto;
+ max-height: 200px;
+}
+.input_field.type1 .fl2 .custom li button:after{
+    display: none;
+ 
+}
+.input_field.type1 .fl2 .btn_select >div{
+    display: block;
+    margin-bottom: 15px;
+}
+
 .alert_pop{
     width: 600px;
     height: 260px;
@@ -3112,12 +3186,21 @@ background: #2E2F33;
     background: #2395FF;
     }
 @media (max-width: 1050px) {
+    
+    .input_field.type1 .fl1 select{
+        width: calc( 50% - 20px);
+        margin-right: 40px;
+    }
+    .input_field.type1{
+        width: 95%;
+    }
     .lgmWrap .btn_prev{
         left: 5%;
     }
     .lgmWrap .btn_close{
         right: 5%;
     }
+
 }
 
 @media (max-width: 930px){
@@ -3140,8 +3223,30 @@ background: #2E2F33;
 .input_tbl td button,.input_field .input_tbl td select{
     width: calc(50% - 20px);
 }
+
+.input_field.type1 .fl1 select{
+    width: calc( 50% - 10px);
+    margin-right: 20px;
+}
+.input_field.type1{
+    width: 95%;
+}
 }
 @media (max-width: 800px){
+    .input_field.type1  select{
+        font-size: 20px;
+    }
+    .input_field.type1 .fl2 .btn_select{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .input_field.type1 .fl2 .btn_select::after{
+        background-size: 20px;
+        right: 5px;
+    }
+    .input_field.type1 .fl2 .btn_select>div {
+        margin-bottom: 5px;
+    }
     .input_tbl th{
         width:20%;
         font-size: 25px;
@@ -3149,6 +3254,7 @@ background: #2E2F33;
     .input_tbl td button,.input_field .input_tbl td select{
         font-size: 20px;
     }
+    
 }
 
 @media (max-width: 680px){
@@ -3166,7 +3272,7 @@ background: #2E2F33;
         margin-right: 10px;
     }
     .input_field .input_tbl td select{
-        background-size: 20px;
+        background-size: 20px ;
     }
     .input_tbl th{
         width:80px;
@@ -3211,14 +3317,19 @@ background: #2E2F33;
     .lgmWrap .input_info .info_txt .hello{
         font-size: 40px;
     }
-    .lgmWrap .input_info .info_txt{
+    .lgmWrap .input_info .info_txt,.lgmWrap .input_info .info_txt .hello em{
         font-size: 30px;
     }
     .lgm_input_area{
         padding: 0 20px;
     }
+
+    .input_field.type1 .fl1 select{
+        background-size: 13px;
+    }
 }
 @media (max-width: 500px){
+    
     .alert_pop .pop_con{
         font-size: 24px;
     }

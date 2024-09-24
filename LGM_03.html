@@ -18,8 +18,8 @@
     <div class="input_info">
         <div class="lgm_input_area">
         <div class="info_txt">
-            <span class="hello">반가워요!</span>            
-            진단에 사용할 닉네임을 <span class="block"> 입력해 주세요.</span>
+            <span class="hello">멋진 청바지 <em>님의</em></span>            
+            응시 진단지를 <span class="block"> 선택해 주세요.</span>
         </div>
         <div class="process">
             <span></span>
@@ -29,17 +29,35 @@
         <fieldset>
             <div class="input_field type1">
                <div class="fl1">
-                  <select name="" id="" class="mr20">
-                    <option value="" selected>학교급</option>
-                  </select>
                   <select name="" id="">
                     <option value="" selected>학교급</option>
                   </select>
+                  <select name="" id="">
+                    <option value="" selected>학년</option>
+                  </select>
                </div>
                <div class="fl2">
-                <select name="" id="" class="mr20">
-                  <option value="" selected>학교급</option>
-                </select>
+                <!-- <select name="" id="" >
+                  <option value="" selected> [중1수학] 진단평가 2기 (1. 소인수분해 ~ 2. 정수와 유리수)</option>
+                </select> -->
+                <button class="btn_select">
+                    <div> [중1수학] 진단평가 2기</div>
+                         (1. 소인수분해 ~ 2. 정수와 유리수)
+                </button>
+                <ul class="custom">
+                    <li>
+                        <button class="btn_select">
+                        <div> [중1수학] 진단평가 2기</div>
+                        (1. 소인수분해 ~ 2. 정수와 유리수)
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn_select">
+                        <div> [중1수학] 진단평가 3기</div>
+                        (1. 소인수분해 ~ 2. 정수와 유리수)
+                        </button>
+                    </li>
+                </ul>
                
              </div>
             </div>
@@ -51,5 +69,22 @@
         <a href="#">다음</a>
     </div>
   </div>
+  <script>
+    window.onload = function(){
+      const btn = document.querySelector('.btn_select');
+      const list = document.querySelector('.custom');
+   
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('on');
+      });
+     list.addEventListener('click', (event) => {
+        if (event.target.nodeName === "BUTTON") {
+            btn.innerText = event.target.innerText;
+            btn.classList.remove('on');
+        }
+    });
+    }
+ 
+   </script>
 </body>
 </html>
