@@ -3197,9 +3197,7 @@ background: #2E2F33;
     .lgm_input_area .input_field span{
         width: calc(100% - 120px);
     }
-    .input_field {
-        margin-top: 7vh;
-    }
+  
     .input_field button{
         width: 80px;
         font-size: 18px;
@@ -3248,13 +3246,19 @@ background: #2E2F33;
     .lgmWrap .input_info .info_txt .hello{
         padding-top: 30%;
     }
-   
+    .lgmWrap .process{
+        margin-top: 5vh;
+    }
+    .input_tbl{
+        margin-top: -30px;
+    }
 }
 @media (max-width: 370px){
     .alert_pop .pop_con{
         font-size: 21px;
     }
 }
+
 
 @media (max-height: 600px){
     .lgmWrap .input_info{
