@@ -1018,6 +1018,10 @@ border-radius: 44px;
   width: 196px;
   height: 196px;
   margin: 70px auto 50px auto;
+  overflow: hidden;
+  border-radius: 65px;
+  border: 7px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.12), 0px 8px 16px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(0, 0, 0, 0.08);
 }
 .info_txt{
     font-size: 26px;
@@ -1528,7 +1532,9 @@ border-radius: 44px;
         background-size: 20px;
     }
     .invite_con .in_photo{
-        margin:30px auto 20px auto
+        width: 180px;
+        height: 180px;
+        margin:30px auto 30px auto
     }
     .info_list{
         margin: 30px auto 0 auto;
@@ -1652,7 +1658,11 @@ border-radius: 44px;
     .info_list span {
         margin-bottom: 20px;
     }
-  
+    .invite_con .in_photo{
+        width: 160px;
+        height: 160px;
+        border-radius: 50px;
+    }
 }
 @media screen and (max-width:370px){
     .qa_list li{
@@ -1686,6 +1696,9 @@ border-radius: 44px;
 @media screen and (orientation: landscape){
     .invitation_wrap {
         min-height:900px;
+    }
+    .endWrap {
+        min-height:940px;
     }
 
 }
