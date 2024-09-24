@@ -3024,6 +3024,7 @@ position: relative;
 }
 .input_tbl td button.on{
     background: #2395FF;
+    color: #fff;
 }
 .input_field .input_tbl td select{
     border: 0;
