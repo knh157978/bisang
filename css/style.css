@@ -3188,8 +3188,8 @@ background: #2E2F33;
     }
     .lgmWrap .btn_close{
         top:20px;
-        width: 30px;
-        background-size: 30px;
+        width: 35px;
+        background-size: 35px;
     }
     .lgmWrap .input_info .info_txt .hello{
         padding-top: 15%;
@@ -3242,9 +3242,17 @@ background: #2E2F33;
     }
 }
 @media (max-width: 430px){
-  
+ 
+    .lgmWrap .btn_prev{
+      width: 20px;
+      background-size: 20px;
+    }
+    .lgmWrap .btn_close{
+        width: 25px;
+        background-size: 25px;
+    }
     .lgmWrap .input_info .info_txt .hello{
-        padding-top: 30%;
+        padding-top: 20%;
     }
     .lgmWrap .process{
         margin-top: 5vh;
@@ -3254,6 +3262,7 @@ background: #2E2F33;
     }
 }
 @media (max-width: 370px){
+    
     .alert_pop .pop_con{
         font-size: 21px;
     }
