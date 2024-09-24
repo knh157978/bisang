@@ -3156,6 +3156,11 @@ background: #2E2F33;
     }
 }
 @media (max-width: 640px){
+    .lgmWrap .process span{
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
     .input_tbl td .mr20{
         margin-right: 10px;
     }
@@ -3191,6 +3196,9 @@ background: #2E2F33;
     }
     .lgm_input_area .input_field span{
         width: calc(100% - 120px);
+    }
+    .input_field {
+        margin-top: 7vh;
     }
     .input_field button{
         width: 80px;
