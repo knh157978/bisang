@@ -276,6 +276,14 @@
  min-height: 100%;
  position: relative;
 }
+.resultWrap .btn_close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/btn_close.png) no-repeat;
+}
 .resultWrap * {
     font-family:'Pretendard';
  }
