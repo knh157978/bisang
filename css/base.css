@@ -56,6 +56,11 @@ time, mark, audio, video {
 	box-sizing: border-box;
 }
 
+
+
+
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -65,7 +70,6 @@ footer, header, hgroup, menu, nav, section {
 html,body{
 	width: 100%;
 	height: 100%;
-	overflow: auto;
 }
 body {
 	line-height: 1;
