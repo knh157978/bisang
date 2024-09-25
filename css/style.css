@@ -2453,6 +2453,10 @@ body.bg_test {
         right: -60px;
     }
 
+    .wrap_contents {
+        padding: 0 50px;
+    }
+
 }
 
 
@@ -2615,7 +2619,7 @@ body.bg_test {
         padding: 0 10%;
     }
 
-    .wrap_contestns {
+    .wrap_contents {
         padding: 0 30px;
     }
 
@@ -2858,9 +2862,6 @@ body.bg_test {
         padding: 0 0 0 0;
     }
 }
-
-
-
 
 /*LGM화면*/
 .lgmWrap {
