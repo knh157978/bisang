@@ -1851,6 +1851,538 @@ height: 12px;
     }
 }
 
+/*LGM화면*/
+.lgmWrap {
+    position: relative;
+    height: 100%;
+}
+.lgmWrap .input_info{
+    text-align: center;
+    background: url(../images/bg_lgm.png) 50% 50% no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 11.3px rgba(0, 0, 0, 0.25);
+    border-radius:0 0 80px 80px;
+    height: 80%;
+}
+.lgmWrap .input_info .info_txt{
+    font-weight: 500;
+    color: #1C1C1C;
+    font-size: 40px;
+    line-height: 1.5em;
+}
+.lgmWrap .input_info .info_txt .hello{
+    display: block;
+    font-size: 48px;
+    font-weight: 800;
+    color: #4863FF;
+   padding-top: 7%;
+}
+.lgmWrap .input_info .info_txt .hello em{
+    font-style: normal;
+    display: inline-block;
+    font-size: 40px;    
+    color: #1C1C1C;
+    font-weight: 400;
+}
+.lgmWrap .btn_prev{
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 56px;
+    background: url(../images/lgm_prev.png) no-repeat;
+    left:13%;
+    top:11%
+}
+.lgmWrap .btn_close{
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: url(../images/lgm_x.png) no-repeat;
+   right:13%;
+    top:11%
+}
+.lgmWrap .process{
+    margin-top:10vh;
+    text-align: center;
+}
+.lgmWrap .process span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #E9E9ED;
+    margin-right: 40px;
+}
+.lgmWrap .process span.on{
+    background: #2395FF;
+}
+.lgmWrap .process span:last-child{
+    margin-right: 0;
+}
+.input_field {
+    margin-top:5.5vh;
+}
+.input_field input{
+    border: 0;
+    height: 90px;
+    background: none;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 48px;
+    font-weight: 800;
+    color:#1c1c1c;
+    text-align: center;
+    box-sizing: border-box;
+}
+.input_field input:focus{
+    outline: none;
+}
+.input_field span{
+display: inline-block;
+width: 423px;
+position: relative;
+
+
+}
+.input_field span::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #72D5FF 0%, #B0A4FF 100%);
+    bottom: 0;
+    left: 0;
+}
+.input_field button{
+    border: 0;
+    background: #1B1C1E;
+    color:#fff;
+    border-radius: 10px;
+    height: 56px;
+    width: 153px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.lgmWrap .btn_area{
+    text-align: center;
+   
+   
+}
+.lgmWrap .btn_area a{
+    display: inline-block;
+    color: #fff;
+    border-radius: 50px;
+    background: #2395FF;
+    width: 300px;
+    height: 77px;
+    line-height: 77px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.input_tbl {
+    margin: 0 auto;
+}
+.input_tbl th {
+    width:20%;
+    color: #1c1c1c;
+    font-size: 34px;
+}
+.input_tbl th,.input_tbl td{
+    padding: 15px 0;
+}
+
+.input_tbl th{
+    padding-right: 20px;
+}
+.input_tbl td input[type="text"]{
+  width: 270px;
+  height: 52px;
+  background: #fff;
+  border-radius: 50px; 
+}
+.input_tbl td button{
+    background: #fff;
+    border-radius: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 26px;
+    color: #2E2F33;
+    cursor: pointer;
+    width: 270px;
+    margin-left: 0;
+}
+.input_tbl td button.on{
+    background: #2395FF;
+    color: #fff;
+}
+.input_field .input_tbl td select{
+    border: 0;
+    border-radius: 50px;
+    height: 50px;
+    width: 270px;
+    text-align: center;
+    background: #fff url(../images/sel_arr.png) no-repeat 90% 50%; 
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    padding:  0 10px;
+    font-size: 26px;
+    color: #2E2F33;
+    font-weight: 700;
+}
+.mr20{
+    margin-right: 20px;
+}
+.input_field.type1 select{
+    border: 0;
+    border-radius: 50px;
+    height: 50px;
+    width: 270px;
+    text-align: center;
+    background: #fff url(../images/sel_cir.png) no-repeat 90% 50%; 
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    padding:  0 10px;
+    font-size: 26px;
+    color: #2E2F33;
+    font-weight: 700;
+}
+.input_field.type1 {
+    width: 940px;
+    margin: 5.5vh auto 0 auto;
+    font-size: 0;
+}
+.input_field.type1 .fl1 select{
+    width: calc(50% - 45px);
+    margin-right: 90px;
+}
+.input_field.type1 .fl1 select:last-child{
+    margin-right: 0;
+}
+.fl2{
+    margin-top: 20px;
+    text-align: left;
+}
+.input_field.type1 .fl2 select{
+    background: #fff url(../images/sel_arr.png) no-repeat 98% 50%; 
+    width: 100%;
+}
+.input_field.type1 .fl2 .btn_select{
+    font-weight: 700;
+    font-size: 26px;
+    color: #1c1c1c;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    height: auto;
+    margin-left: 0;
+    line-height: normal;
+    cursor: pointer;
+}
+.input_field.type1 .fl2 .btn_select.on::after{
+    transform: rotate(180deg);
+}
+.input_field.type1 .fl2 .btn_select.on+.custom{
+    display: block;
+}
+.input_field.type1 .fl2 .btn_select::after{
+    display: block;
+    content: '';
+    position: absolute;
+    right: 20px;
+    top:50%;
+    background: url(../images/sel_arr.png) no-repeat;
+    width: 26px;
+    height: 21px;
+    background-size: 26px;
+    margin-top: -10px;
+}
+.input_field.type1 .fl2 .custom{
+    display: none;
+ background: #fff;
+ border-radius: 20px;
+ margin-top: 10px;
+ width: 100%;
+ border: 1px solid rgba(0,0,0,.1) ;
+ overflow: auto;
+ max-height: 200px;
+}
+.input_field.type1 .fl2 .custom li button:after{
+    display: none;
+ 
+}
+.input_field.type1 .fl2 .btn_select >div{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.alert_pop{
+    width: 600px;
+    height: 260px;
+    background: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    text-align: center;
+
+}
+.alert_pop .pop_con{
+    font-size: 26px;
+    color:#000;
+  
+    line-height: 1.6em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.alert_pop .pop_con span{
+    font-weight: 700;
+    display: block;
+}
+.alert_pop .pop_con .btn_area{
+    margin-top: 30px;
+}
+.alert_pop .pop_con .btn_area a{
+    display: inline-block;
+    border-radius: 25px;
+    width: 117px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+.alert_pop .pop_con .btn_area a.cancel{
+background: #2E2F33;
+}
+.alert_pop .pop_con .btn_area a.confirm{
+    background: #00B5E2;
+    }
+.alert_pop .pop_con .btn_area a.end{
+    background: #2395FF;
+    }
+@media (max-width: 1050px) {
+    
+    .input_field.type1 .fl1 select{
+        width: calc( 50% - 20px);
+        margin-right: 40px;
+    }
+    .input_field.type1{
+        width: 95%;
+    }
+    .lgmWrap .btn_prev{
+        left: 5%;
+    }
+    .lgmWrap .btn_close{
+        right: 5%;
+    }
+
+}
+
+@media (max-width: 930px){
+   .info_txt .block{
+    display: block;
+
+   }
+
+.lgm_input_area{
+    width: 100%;
+    padding: 0 40px;
+}
+.lgm_input_area .input_field span{
+  width: calc(100% - 183px);
+}
+.input_tbl{
+    width: 100%;
+}
+
+.input_tbl td button,.input_field .input_tbl td select{
+    width: calc(50% - 20px);
+}
+
+.input_field.type1 .fl1 select{
+    width: calc( 50% - 10px);
+    margin-right: 20px;
+}
+.input_field.type1{
+    width: 95%;
+}
+}
+@media (max-width: 800px){
+    .input_field.type1  select{
+        font-size: 20px;
+    }
+    .input_field.type1 .fl2 .btn_select{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .input_field.type1 .fl2 .btn_select::after{
+        background-size: 20px;
+        right: 5px;
+    }
+    .input_field.type1 .fl2 .btn_select>div {
+        margin-bottom: 5px;
+    }
+    .input_tbl th{
+        width:20%;
+        font-size: 25px;
+    }
+    .input_tbl td button,.input_field .input_tbl td select{
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 680px){
+    .alert_pop{
+        width: 90%;
+    }
+}
+@media (max-width: 640px){
+    .lgmWrap .process span{
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+    .input_tbl td .mr20{
+        margin-right: 10px;
+    }
+    .input_field .input_tbl td select{
+        background-size: 20px ;
+    }
+    .input_tbl th{
+        width:80px;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    .input_tbl td button,.input_field .input_tbl td select{
+        font-size: 20px;
+    }
+    .lgmWrap .btn_area a{
+        width: 200px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 25px;
+    }
+    .lgmWrap .btn_prev{
+        top:20px;
+        width: 30px;
+        background-size: 30px;
+    }
+    .lgmWrap .btn_close{
+        top:20px;
+        width: 35px;
+        background-size: 35px;
+    }
+    .lgmWrap .input_info .info_txt .hello{
+        padding-top: 15%;
+    }
+    .lgm_input_area .input_field span{
+        width: calc(100% - 120px);
+    }
+  
+    .input_field button{
+        width: 80px;
+        font-size: 18px;
+        height: 46px;
+        line-height: 46px;
+    }
+    .input_field input{
+        height: 70px;
+    }
+    .lgmWrap .input_info .info_txt .hello{
+        font-size: 40px;
+    }
+    .lgmWrap .input_info .info_txt,.lgmWrap .input_info .info_txt .hello em{
+        font-size: 30px;
+    }
+    .lgm_input_area{
+        padding: 0 20px;
+    }
+
+    .input_field.type1 .fl1 select{
+        background-size: 13px;
+    }
+}
+@media (max-width: 500px){
+    
+    .alert_pop .pop_con{
+        font-size: 24px;
+    }
+    .input_tbl th{
+        font-size: 16px;
+        width: 70px;
+    }
+    .input_tbl td button, .input_field .input_tbl td select{
+        font-size: 16px;
+    }
+    .input_field .input_tbl td select{
+        background-size: 15px;
+    }
+    .input_tbl td button, .input_field .input_tbl td select{
+        width: calc(50% - 5px);
+    }
+    .input_field .input_tbl td .mr20{
+        margin-right: 5px;
+    }
+    .input_tbl th, .input_tbl td{
+        padding: 10px 0;
+    }
+}
+@media (max-width: 430px){
+ 
+    .lgmWrap .btn_prev{
+      width: 20px;
+      background-size: 20px;
+    }
+    .lgmWrap .btn_close{
+        width: 25px;
+        background-size: 25px;
+    }
+    .lgmWrap .input_info .info_txt .hello{
+        padding-top: 20%;
+    }
+    .lgmWrap .process{
+        margin-top: 5vh;
+    }
+    .input_tbl{
+        margin-top: -30px;
+    }
+}
+@media (max-width: 370px){
+    
+    .alert_pop .pop_con{
+        font-size: 21px;
+    }
+}
+
+
+@media (max-height: 600px){
+    .lgmWrap .input_info{
+        height:600px;
+    }
+    .lgmWrap .btn_area{
+        padding-bottom: 30px;
+    }
+ 
+}
+
+
+
+
 body.bg_test {
     background: url(../images/bg_test_cir.png) #f6f6fa no-repeat;
     background-size: cover;
@@ -2861,533 +3393,4 @@ body.bg_test {
     .test_title .etc_info.type2 {
         padding: 0 0 0 0;
     }
-}
-
-/*LGM화면*/
-.lgmWrap {
-    position: relative;
-    height: 100%;
-}
-.lgmWrap .input_info{
-    text-align: center;
-    background: url(../images/bg_lgm.png) 50% 50% no-repeat;
-    background-size: cover;
-    box-shadow: 0px 4px 11.3px rgba(0, 0, 0, 0.25);
-    border-radius:0 0 80px 80px;
-    height: 80%;
-}
-.lgmWrap .input_info .info_txt{
-    font-weight: 500;
-    color: #1C1C1C;
-    font-size: 40px;
-    line-height: 1.5em;
-}
-.lgmWrap .input_info .info_txt .hello{
-    display: block;
-    font-size: 48px;
-    font-weight: 800;
-    color: #4863FF;
-   padding-top: 7%;
-}
-.lgmWrap .input_info .info_txt .hello em{
-    font-style: normal;
-    display: inline-block;
-    font-size: 40px;    
-    color: #1C1C1C;
-    font-weight: 400;
-}
-.lgmWrap .btn_prev{
-    display: block;
-    position: absolute;
-    width: 36px;
-    height: 56px;
-    background: url(../images/lgm_prev.png) no-repeat;
-    left:13%;
-    top:11%
-}
-.lgmWrap .btn_close{
-    display: block;
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    background: url(../images/lgm_x.png) no-repeat;
-   right:13%;
-    top:11%
-}
-.lgmWrap .process{
-    margin-top:10vh;
-    text-align: center;
-}
-.lgmWrap .process span {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    background: #E9E9ED;
-    margin-right: 40px;
-}
-.lgmWrap .process span.on{
-    background: #2395FF;
-}
-.lgmWrap .process span:last-child{
-    margin-right: 0;
-}
-.input_field {
-    margin-top:5.5vh;
-}
-.input_field input{
-    border: 0;
-    height: 90px;
-    background: none;
-    width: 100%;
-    padding: 0 20px;
-    font-size: 48px;
-    font-weight: 800;
-    color:#1c1c1c;
-    text-align: center;
-    box-sizing: border-box;
-}
-.input_field input:focus{
-    outline: none;
-}
-.input_field span{
-display: inline-block;
-width: 423px;
-position: relative;
-
-
-}
-.input_field span::after{
-    display: block;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, #72D5FF 0%, #B0A4FF 100%);
-    bottom: 0;
-    left: 0;
-}
-.input_field button{
-    border: 0;
-    background: #1B1C1E;
-    color:#fff;
-    border-radius: 10px;
-    height: 56px;
-    width: 153px;
-    line-height: 56px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 20px;
-}
-.lgmWrap .btn_area{
-    text-align: center;
-   
-   
-}
-.lgmWrap .btn_area a{
-    display: inline-block;
-    color: #fff;
-    border-radius: 50px;
-    background: #2395FF;
-    width: 300px;
-    height: 77px;
-    line-height: 77px;
-    font-size: 32px;
-    font-weight: 700;
-    margin-top: 50px;
-}
-.input_tbl {
-    margin: 0 auto;
-}
-.input_tbl th {
-    width:20%;
-    color: #1c1c1c;
-    font-size: 34px;
-}
-.input_tbl th,.input_tbl td{
-    padding: 15px 0;
-}
-
-.input_tbl th{
-    padding-right: 20px;
-}
-.input_tbl td input[type="text"]{
-  width: 270px;
-  height: 52px;
-  background: #fff;
-  border-radius: 50px; 
-}
-.input_tbl td button{
-    background: #fff;
-    border-radius: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 600;
-    font-size: 26px;
-    color: #2E2F33;
-    cursor: pointer;
-    width: 270px;
-    margin-left: 0;
-}
-.input_tbl td button.on{
-    background: #2395FF;
-    color: #fff;
-}
-.input_field .input_tbl td select{
-    border: 0;
-    border-radius: 50px;
-    height: 50px;
-    width: 270px;
-    text-align: center;
-    background: #fff url(../images/sel_arr.png) no-repeat 90% 50%; 
-    -webkit-appearance: none; /* 네이티브 외형 감추기 */
-    -moz-appearance: none;
-    appearance: none;
-    padding:  0 10px;
-    font-size: 26px;
-    color: #2E2F33;
-    font-weight: 700;
-}
-.mr20{
-    margin-right: 20px;
-}
-.input_field.type1 select{
-    border: 0;
-    border-radius: 50px;
-    height: 50px;
-    width: 270px;
-    text-align: center;
-    background: #fff url(../images/sel_cir.png) no-repeat 90% 50%; 
-    -webkit-appearance: none; /* 네이티브 외형 감추기 */
-    -moz-appearance: none;
-    appearance: none;
-    padding:  0 10px;
-    font-size: 26px;
-    color: #2E2F33;
-    font-weight: 700;
-}
-.input_field.type1 {
-    width: 940px;
-    margin: 5.5vh auto 0 auto;
-    font-size: 0;
-}
-.input_field.type1 .fl1 select{
-    width: calc(50% - 45px);
-    margin-right: 90px;
-}
-.input_field.type1 .fl1 select:last-child{
-    margin-right: 0;
-}
-.fl2{
-    margin-top: 20px;
-    text-align: left;
-}
-.input_field.type1 .fl2 select{
-    background: #fff url(../images/sel_arr.png) no-repeat 98% 50%; 
-    width: 100%;
-}
-.input_field.type1 .fl2 .btn_select{
-    font-weight: 700;
-    font-size: 26px;
-    color: #1c1c1c;
-    text-align: center;
-    width: 100%;
-    background: #fff;
-    border-radius: 20px;
-    padding: 20px;
-    position: relative;
-    height: auto;
-    margin-left: 0;
-    line-height: normal;
-    cursor: pointer;
-}
-.input_field.type1 .fl2 .btn_select.on::after{
-    transform: rotate(180deg);
-}
-.input_field.type1 .fl2 .btn_select.on+.custom{
-    display: block;
-}
-.input_field.type1 .fl2 .btn_select::after{
-    display: block;
-    content: '';
-    position: absolute;
-    right: 20px;
-    top:50%;
-    background: url(../images/sel_arr.png) no-repeat;
-    width: 26px;
-    height: 21px;
-    background-size: 26px;
-    margin-top: -10px;
-}
-.input_field.type1 .fl2 .custom{
-    display: none;
- background: #fff;
- border-radius: 20px;
- margin-top: 10px;
- width: 100%;
- border: 1px solid rgba(0,0,0,.1) ;
- overflow: auto;
- max-height: 200px;
-}
-.input_field.type1 .fl2 .custom li button:after{
-    display: none;
- 
-}
-.input_field.type1 .fl2 .btn_select >div{
-    display: block;
-    margin-bottom: 15px;
-}
-
-.alert_pop{
-    width: 600px;
-    height: 260px;
-    background: #fff;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    border-radius: 20px;
-    text-align: center;
-
-}
-.alert_pop .pop_con{
-    font-size: 26px;
-    color:#000;
-  
-    line-height: 1.6em;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    left: 0;
-    transform: translateY(-50%);
-}
-.alert_pop .pop_con span{
-    font-weight: 700;
-    display: block;
-}
-.alert_pop .pop_con .btn_area{
-    margin-top: 30px;
-}
-.alert_pop .pop_con .btn_area a{
-    display: inline-block;
-    border-radius: 25px;
-    width: 117px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-}
-.alert_pop .pop_con .btn_area a.cancel{
-background: #2E2F33;
-}
-.alert_pop .pop_con .btn_area a.confirm{
-    background: #00B5E2;
-    }
-.alert_pop .pop_con .btn_area a.end{
-    background: #2395FF;
-    }
-@media (max-width: 1050px) {
-    
-    .input_field.type1 .fl1 select{
-        width: calc( 50% - 20px);
-        margin-right: 40px;
-    }
-    .input_field.type1{
-        width: 95%;
-    }
-    .lgmWrap .btn_prev{
-        left: 5%;
-    }
-    .lgmWrap .btn_close{
-        right: 5%;
-    }
-
-}
-
-@media (max-width: 930px){
-   .info_txt .block{
-    display: block;
-
-   }
-
-.lgm_input_area{
-    width: 100%;
-    padding: 0 40px;
-}
-.lgm_input_area .input_field span{
-  width: calc(100% - 183px);
-}
-.input_tbl{
-    width: 100%;
-}
-
-.input_tbl td button,.input_field .input_tbl td select{
-    width: calc(50% - 20px);
-}
-
-.input_field.type1 .fl1 select{
-    width: calc( 50% - 10px);
-    margin-right: 20px;
-}
-.input_field.type1{
-    width: 95%;
-}
-}
-@media (max-width: 800px){
-    .input_field.type1  select{
-        font-size: 20px;
-    }
-    .input_field.type1 .fl2 .btn_select{
-        padding: 10px;
-        font-size: 18px;
-    }
-    .input_field.type1 .fl2 .btn_select::after{
-        background-size: 20px;
-        right: 5px;
-    }
-    .input_field.type1 .fl2 .btn_select>div {
-        margin-bottom: 5px;
-    }
-    .input_tbl th{
-        width:20%;
-        font-size: 25px;
-    }
-    .input_tbl td button,.input_field .input_tbl td select{
-        font-size: 20px;
-    }
-    
-}
-
-@media (max-width: 680px){
-    .alert_pop{
-        width: 90%;
-    }
-}
-@media (max-width: 640px){
-    .lgmWrap .process span{
-        width: 20px;
-        height: 20px;
-        margin-right: 20px;
-    }
-    .input_tbl td .mr20{
-        margin-right: 10px;
-    }
-    .input_field .input_tbl td select{
-        background-size: 20px ;
-    }
-    .input_tbl th{
-        width:80px;
-        font-size: 20px;
-        padding-right: 10px;
-    }
-    .input_tbl td button,.input_field .input_tbl td select{
-        font-size: 20px;
-    }
-    .lgmWrap .btn_area a{
-        width: 200px;
-        height: 60px;
-        line-height: 60px;
-        font-size: 25px;
-    }
-    .lgmWrap .btn_prev{
-        top:20px;
-        width: 30px;
-        background-size: 30px;
-    }
-    .lgmWrap .btn_close{
-        top:20px;
-        width: 35px;
-        background-size: 35px;
-    }
-    .lgmWrap .input_info .info_txt .hello{
-        padding-top: 15%;
-    }
-    .lgm_input_area .input_field span{
-        width: calc(100% - 120px);
-    }
-  
-    .input_field button{
-        width: 80px;
-        font-size: 18px;
-        height: 46px;
-        line-height: 46px;
-    }
-    .input_field input{
-        height: 70px;
-    }
-    .lgmWrap .input_info .info_txt .hello{
-        font-size: 40px;
-    }
-    .lgmWrap .input_info .info_txt,.lgmWrap .input_info .info_txt .hello em{
-        font-size: 30px;
-    }
-    .lgm_input_area{
-        padding: 0 20px;
-    }
-
-    .input_field.type1 .fl1 select{
-        background-size: 13px;
-    }
-}
-@media (max-width: 500px){
-    
-    .alert_pop .pop_con{
-        font-size: 24px;
-    }
-    .input_tbl th{
-        font-size: 16px;
-        width: 70px;
-    }
-    .input_tbl td button, .input_field .input_tbl td select{
-        font-size: 16px;
-    }
-    .input_field .input_tbl td select{
-        background-size: 15px;
-    }
-    .input_tbl td button, .input_field .input_tbl td select{
-        width: calc(50% - 5px);
-    }
-    .input_field .input_tbl td .mr20{
-        margin-right: 5px;
-    }
-    .input_tbl th, .input_tbl td{
-        padding: 10px 0;
-    }
-}
-@media (max-width: 430px){
- 
-    .lgmWrap .btn_prev{
-      width: 20px;
-      background-size: 20px;
-    }
-    .lgmWrap .btn_close{
-        width: 25px;
-        background-size: 25px;
-    }
-    .lgmWrap .input_info .info_txt .hello{
-        padding-top: 20%;
-    }
-    .lgmWrap .process{
-        margin-top: 5vh;
-    }
-    .input_tbl{
-        margin-top: -30px;
-    }
-}
-@media (max-width: 370px){
-    
-    .alert_pop .pop_con{
-        font-size: 21px;
-    }
-}
-
-
-@media (max-height: 600px){
-    .lgmWrap .input_info{
-        height:600px;
-    }
-    .lgmWrap .btn_area{
-        padding-bottom: 30px;
-    }
- 
 }
