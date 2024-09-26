@@ -2853,8 +2853,6 @@ body.bg_test {
     display: flex;
     flex-wrap: wrap;
     gap: 25px 35px;
-    height: 400px;
-    overflow: auto;
 }
 
 .whole_list li {
@@ -3380,8 +3378,6 @@ body.bg_test {
         padding: 0 30px;
     }
 
-    .whole_list {height: initial; overflow: initial;}
-
     .whole_list li {
         width: calc(33% - 23.3px);
         padding: 0 0 25% 0;
@@ -3621,6 +3617,4 @@ body.bg_test {
         padding: 0 0 0 0;
     }
 }
-
-
 
