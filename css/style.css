@@ -2610,6 +2610,7 @@ background: #2E2F33;
 body.bg_test {
     background: url(../images/bg_test_cir.png) #f6f6fa no-repeat;
     background-size: cover;
+    
 }
 
 /********** HEADER + CONTENTS 기본레이아웃 **********/
