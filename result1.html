@@ -54,9 +54,10 @@
        </ul>
        <div class="box_con">
          <div class="box_left">
-           <a href="#" class="btn_qa">
-            클릭하여 비상 AI에게 궁금한 점을 물어보세요.
-           </a>
+            <div class="btn_qa">
+                <input type="text" placeholder="클릭하여 비상 AI에게 궁금한 점을 물어보세요.">
+                <a href="#" class="click_qa"></a>
+            </div>
            <dl class="review">
            <dt>
             총평 <a href="#">펼쳐보기</a>
@@ -68,19 +69,61 @@
            <!--tab-->
            <ul class="result_tab">
               <li><a href="#">나의 강점은?</a></li>
-              <li><a href="#">나의 약점은?</a></li>
+              <li  class="on"><a href="#">나의 약점은?</a></li>
               <li><a href="#">지식맵</a></li>
               <li ><a href="#">예측점수</a></li>
-              <li class="on"><a href="#">성향</a></li>
+              <li><a href="#">성향</a></li>
            </ul>
            <div class="tab_pannel">
             <div class="chart">
-             <img src="images/chart1.png" alt="">
+              <div class="color_tbl">
+                <div>
+                    <table class="chart_tbl">   
+                        <tbody class="col1">                
+                         <tr>
+                            <th rowspan="3">소인수분해</th>
+                            <td class="step1">소인수분해</td>
+                            <td  class="step1">소인수분해</td>
+                         </tr>
+                         <tr>                        
+                            <td rowspan="2"  class="step2">최대공약수와<br>
+                                 최소공배수</td>
+                            <td   class="step2">최대공약수와 그 활용</td>
+                         </tr>
+                         <tr>                   
+                            <td  class="step3">최소공배수와 그 활용</td>
+                         </tr>   
+                        </tbody>    
+                        <tbody class="col2">         
+                         <tr >
+                            <th rowspan="3">정수와 유리수</th>
+                            <td  class="step1">소인수분해</td>
+                            <td class="step1">소인수분해</td>
+                         </tr>
+                         <tr>                        
+                            <td rowspan="2" class="step2">최대공약수와<br>
+                                 최소공배수</td>
+                            <td class="step2" >최대공약수와 그 활용</td>
+                         </tr>
+                         <tr>                   
+                            <td  class="step3">최소공배수와 그 활용</td>
+                         </tr> 
+                        </tbody>                                             
+                    </table>
+                </div>
+                <div class="gra_process">
+                  <div class="graph">
+                    <span class="step1"> 100</span>
+                    <span class="step2"> 50</span>
+                    <span class="step3">0 </span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <ul class="qa_list">
-               <li>나의 강점1. 정수와 유리수</li>
-               <li>나의 강점2. 정수와 유리수의 덧셈과 뺄셈</li>
-               <li>나의 강점3. 정수와 유리수의 곱셈과 나눗셈</li>
+            <ul class="qa_list weak">
+               <li><span>나의 강점1</span>정수와 유리수</li>
+               <li><span>나의 강점2</span>정수와 유리수의 덧셈과 뺄셈</li>
+               <li><span>나의 강점3</span>정수와 유리수의 곱셈과 나눗셈</li>
             </ul>
             <div class="result_txt">
                정수와 유리수와 관련된 단원에서 정말 뛰어난 성과를 보였어요! 특히 "정수와 유리수의 덧셈과
