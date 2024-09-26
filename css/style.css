@@ -1101,10 +1101,15 @@ overflow-y: auto;
     top:10px;
     right: 10px;
 }
-.answer_list {
+.answer_area {
     width: 695px;
-    margin: 0 auto;
-    height: calc(100% - 80px);
+    margin: 15px auto ;
+    height: calc(100% - 250px);
+}
+
+.answer_list {
+  height: 100%;
+  
     overflow: auto;
 }
 .answer_list dt{
@@ -1112,7 +1117,7 @@ overflow-y: auto;
 /* gradient02 */
 background: linear-gradient(90deg, #199ED7 0%, #7E69FF 100%);
 box-shadow: 0px 11px 22.9px rgba(119, 194, 229, 0.15);
-border-radius: 30px;
+border-radius: 0 30px 30px 30px;
 color: #fff;
 font-size: 18px;
 font-weight: 700;
@@ -1120,8 +1125,8 @@ height: 76px;
 display: flex;
 align-items: center;
 position: relative;
-padding-right: 100px;
 line-height: 1.35em;
+padding-right: 20px;
 }
 .answer_list dt .photo{
     display: inline-block;
@@ -1553,14 +1558,13 @@ border-radius: 44px;
 @media screen and (max-width:768px){
  
    
-    .answer_list{
+    .answer_area {
         width: 95%;
     }
     .answer_list dt .time{
         right: 20px;
     }
     .answer_list dt {
-        padding-right:80px;
         font-size: 16px;
     }
     .answer_list dd{
