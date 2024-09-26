@@ -2318,6 +2318,7 @@ position: relative;
     height: 40px;
     line-height: 40px;
     color: #fff;
+    box-sizing: content-box;
 }
 .alert_pop .pop_con .btn_area a.cancel{
 background: #2E2F33;
@@ -2327,6 +2328,8 @@ background: #2E2F33;
     }
 .alert_pop .pop_con .btn_area a.end{
     background: #2395FF;
+    min-width: 117px;    
+    padding: 0 20px;
     }
 @media (max-width: 1050px) {
     
@@ -2474,7 +2477,8 @@ background: #2E2F33;
 @media (max-width: 500px){
     
     .alert_pop .pop_con{
-        font-size: 24px;
+        font-size: 20px;
+        padding: 0 15px;
     }
     .input_tbl th{
         font-size: 16px;
