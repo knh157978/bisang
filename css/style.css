@@ -3380,7 +3380,10 @@ body.bg_test {
         padding: 0 30px;
     }
 
-    .whole_list {height: initial; overflow: initial;}
+    .whole_list {
+        /* height: initial; 
+        overflow: initial; */
+    }
 
     .whole_list li {
         width: calc(33% - 23.3px);
