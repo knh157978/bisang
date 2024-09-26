@@ -247,3 +247,171 @@ body.bg_main1 {
     }
 
 }
+
+/*faq*/
+.pop_faq{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 1020px;
+    height: 780px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    }
+    .pop_faq .faq_tit{
+        height: 76px;
+        line-height: 76px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        background: #2395FF;
+        padding-left: 30px;
+    }
+    .pop_faq .faq_tit .btn_close{
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: 30px;
+        background: url(../images/btn_close_w.png) no-repeat;
+        top:50%;
+        margin-top: -14px;
+    }
+    .pop_faq .faq_con{
+        height:100%;
+    }
+    .pop_faq .faq_info{
+        display: flex;
+        padding: 30px;
+        max-height: calc(100% - 80px);
+    }
+    .pop_faq .faq_info>div{
+        width: calc(50% - 15px);
+        margin-right: 30px;
+    }
+    .pop_faq .faq_info>div:last-child{
+        margin-right: 0;
+    }
+    .pop_faq .faq_info .faq_question{
+        overflow: auto;
+       
+    }
+    .faq_question li{
+        padding: 20px 0;
+        border-bottom: 1px solid #EEEEEE;
+       
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+    
+    .faq_question li a{
+        display: block;
+        color: #1C1C1C;
+    }
+    .faq_question li.on  a{
+        color:#4863FF ;
+        font-weight: 700;
+    }
+    .pop_faq .faq_info .faq_answer dl{
+        border: 2px solid transparent;
+        border-radius: 10px;
+        background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #72D5FF 0%,  #B0A4FF 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        height: 100%;
+        overflow-y: auto;
+    
+    }
+    .pop_faq .faq_info .faq_answer dl dt{
+        font-size: 20px;
+        font-weight: 700;
+        color: #1C1C1C;
+        padding: 30px;
+        line-height: 1.5em;
+    }
+    .pop_faq .faq_info .faq_answer dl dd{
+        font-size: 16px;
+        color: #1C1C1C;
+        padding: 0 30px 30px 30px;
+        line-height: 1.6em;
+    }
+    
+    @media (max-width:1104px) {
+        .pop_faq{
+            width: 95%;
+        }
+    
+    }
+    @media (max-width:768px){
+        .pop_faq .faq_info{
+            max-height: calc(100% - 60px);
+        }
+        .pop_faq .faq_tit {
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;
+            padding-left:20px
+        }
+        .pop_faq .faq_tit .btn_close{
+            right: 20px;
+            background-size: 20px;
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+        }
+        .pop_faq .faq_info{
+            padding: 20px;
+        }
+        .pop_faq .faq_info>div{
+            width: calc(50% - 10px);
+            margin-right: 20px;
+        }
+        .pop_faq .faq_info .faq_answer dl dt{
+            padding: 20px;
+        }
+        .pop_faq .faq_info .faq_answer dl dd{
+            padding: 0 20px 20px 20px;
+        }
+        .faq_question li {
+            font-size: 15px;
+        }
+        .pop_faq .faq_info .faq_answer dl dt{
+            font-size: 18px;
+        }
+        .pop_faq .faq_info .faq_answer dl dd {
+            font-size: 15px;
+        }
+    }
+    @media (max-width:600px){
+      
+        .pop_faq .faq_info{
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+            max-height: calc( 100% - 70px);
+        }
+        .pop_faq .faq_info>div{
+            width: 100%;
+     
+        }
+        .pop_faq .faq_info .faq_question{
+            overflow: initial;
+        }
+        .faq_answer {
+            margin-top: 30px;
+        }
+        .faq_question li:first-child{
+            padding-top: 0;
+        }
+    }
+    
+    @media (max-height:800px){
+        .pop_faq{
+            height: 90%;
+        }
+    
+    }
