@@ -956,24 +956,74 @@ background: url(../images/ico_insta.png) no-repeat;
     vertical-align: middle;
     margin-left: 5px;
 }
+.pop_ai{
+    width:1031px;
+    height: 750px;
+    background: #fff;
+    position: relative;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    overflow: hidden;
+}
 .logo_ai{
     width: 150px;
     margin-left: 20px;
 }
+.ai_tit {
+  height: 76px;
+  width: 100%;
+  background: #047AFF ;
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ai_tit .ai_logo{
+    width: 105px;
+}
+.ai_tit .btn_close{
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 30px;
+    background: url(../images/btn_close_w.png) no-repeat;
+    top: 50%;
+    margin-top: -14px;
+}
+.pop_ai_con {
+    background:#F6F6FA ;
+    height: 100%;
+}
+.ai{
+    width:37px;
+    height: 33px;
+    margin-bottom: 20px;
+}
+.ai_area{
+    width:70%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: calc(100% - 216px);
+}
+.ai img{
+    width: 37px;
+}
 .box_ai{
 padding: 50px;
 /* 06.white */
-background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #545556, #545556), linear-gradient(0deg, #00F7D9, #00F7D9), #00B5E2;
+background: #fff;
+border-radius: 0 30px 30px 30px; 
 /* shadow02 */
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08), 0px 0px 4px rgba(0, 0, 0, 0.08);
-border-radius: 30px;
-width:700px;
-height:524px ;
-position: absolute;
-top:50%;
-left: 50%;
-transform: translate(-50%,-50%);
-
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+width:100%;
+height:calc(100% - 67px);
+overflow-y: auto;
 }
 
 .bg_gray{
@@ -1315,6 +1365,12 @@ border-radius: 44px;
     }
 }
 @media screen and (max-width:1180px){
+    .pop_ai{
+        width: 90%;
+    }
+    .ai_area{
+        width: 90%;
+    }
     .tendency .tit {
         font-size: 35px !important;
     }
@@ -1480,15 +1536,6 @@ border-radius: 44px;
     .resultWrap .tit .util{
         top:-8px
     }
-}
-@media screen and (max-width:768px){
-    .box_ai{
-        width:90%;
-        padding: 30px;
-        max-height:calc(100% - 190px);
-        transform: translate(-50%, -53%);
-        overflow-y:auto ;
-    }
     .ico_robot_b {
         margin-right: 20px;
         word-break: keep-all;
@@ -1499,7 +1546,13 @@ border-radius: 44px;
     .ico_robot {
         margin-left: 20px;
     }
-
+    .box_ai{
+        padding: 30px;
+    }
+}
+@media screen and (max-width:768px){
+ 
+   
     .answer_list{
         width: 95%;
     }
@@ -1522,12 +1575,11 @@ border-radius: 44px;
         font-size: 15px;
     }
 }
-@media screen and (max-height:725px){
+@media screen and (max-height:780px){
+    .pop_ai{
+        height: 90%;
+    }
     .box_ai{
-        width:90%;
-        padding: 30px;
-        max-height:calc(100% - 190px);
-        transform: translate(-50%, -53%);
         overflow-y:auto ;
     }
     .ico_robot_b {
@@ -1604,6 +1656,15 @@ border-radius: 44px;
 }
 }
 @media screen and (max-width:548px){
+    .ai_tit {
+        padding-left: 20px;
+        height: 60px;
+    }
+    .ai_tit .btn_close {
+        right: 20px;
+        width: 20px;
+        background-size: 20px;
+    }
     .info_txt .block {
        display: block;
     }
@@ -1650,6 +1711,9 @@ border-radius: 44px;
     }
     .tag_area {
         margin-top: 30px;
+    }
+    .tag_area a{
+        font-size: 18px;
     }
 }
 @media screen and (max-width:480px){
@@ -2539,14 +2603,10 @@ background: #2E2F33;
 }
 
 
-
-
 body.bg_test {
     background: url(../images/bg_test_cir.png) #f6f6fa no-repeat;
     background-size: cover;
 }
-
-
 
 /********** HEADER + CONTENTS 기본레이아웃 **********/
 .wrap_test {
@@ -2789,6 +2849,8 @@ body.bg_test {
     display: flex;
     flex-wrap: wrap;
     gap: 25px 35px;
+    height: 400px;
+    overflow: auto;
 }
 
 .whole_list li {
@@ -3161,6 +3223,7 @@ body.bg_test {
         margin: 0 20px;
         padding: 160px 0 20px 0;
     }
+
     /* 200px = 20px(전체 상단여백) + 120px(헤더높이) + 20px(헤더 바텀 마진) */
 
     .wrap_test.type2 {
@@ -3312,6 +3375,8 @@ body.bg_test {
     .wrap_contents {
         padding: 0 30px;
     }
+
+    .whole_list {height: initial; overflow: initial;}
 
     .whole_list li {
         width: calc(33% - 23.3px);
@@ -3552,3 +3617,6 @@ body.bg_test {
         padding: 0 0 0 0;
     }
 }
+
+
+
