@@ -60,12 +60,21 @@
            </div>
            <dl class="review">
            <dt>
-            총평 <a href="#">펼쳐보기</a>
+            총평 <a href="#" class="btn_expand">펼쳐보기</a>
            </dt>
            <dd>
             이번 진단평가에서 멋진 청바지님은 정수와 유리수 단원에서 매우 뛰어난 성과를 보이며 강점을 드러냈습니다. 특히 연산 부분에서 깊은 이해를 보여주었어요. 반면, 최대공약수와 최소공배수 단원에서는 약간의 어려움을 겪었으며, 추가적인 학습이 필요합니다. 강점을 살리면서 약점을 보완해 나간다면 앞으로 더욱 좋은 성과를 낼 수 있을 것입니다. 꾸준한 노력으로 성장해 나가길 기대합니다!
            </dd>
            </dl>  
+
+           <script>
+              $(document).ready(function(){
+                $('.btn_expand').click(function(e){
+                   $('.review dd').slideToggle('slow')
+                  e.preventDefault()
+                })
+              })
+           </script>
            <!--tab-->
            <ul class="result_tab">
               <li class="on"><a href="#">나의 강점은?</a></li>

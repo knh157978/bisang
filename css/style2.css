@@ -1012,3 +1012,13 @@ body.bg_test {
         padding: 0 0 0 0;
     }
 }
+
+/*faq*/
+.pop_faq{
+background: #FFFFFF;
+box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+border-radius: 15px;
+position: absolute;
+top:0
+
+}
