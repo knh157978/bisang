@@ -8,6 +8,13 @@ body.bg_main1 {
     padding: 70px 0;
 }
 
+body.bg_main3 {
+    position: relative;
+    background: #6AB8FF;
+    background-size: 100% 100%;
+    padding: 70px 0;
+}
+
 .bg_main2 {
     position: fixed;
     bottom: 0;
@@ -143,7 +150,46 @@ body.bg_main1 {
     height: 47px;
 }
 
+    /*test-end*/
+    .wrap_main.end .left{
+        width: 50%;
+        padding-top: 140px;
+    }
+    .wrap_main.end.one .left {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
 
+    }
+    .wrap_main.end.one .left .title {
+        display: inline-block;
+    }
+    .wrap_main.end.one .left .title::after{
+       width: 100%;
+    }
+    .wrap_main.end .right{
+        width:50%;
+    }
+    .wrap_main.end{
+        padding: 0 100px;
+    }
+    .wrap_main.end .left .title{
+        font-size: 42px;
+        line-height: 1.5em;
+        padding-bottom: 38px;
+    }
+    .wrap_main.end .title span{
+        display: block;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.35em;
+    }
+    .wrap_main.end .title span.bold{
+        font-weight: 700;
+    }
+    .wrap_main.end .subtxt{
+        line-height: 1.6em;
+    }
 
 
 
@@ -161,7 +207,19 @@ body.bg_main1 {
     .wrap_main {
         width: 95%;
     }
-
+   .wrap_main.end .left{
+        width: 60%;
+    }
+    .wrap_main.end .right{
+        width: 40%;
+    }
+    .wrap_main.end{
+        width: initial;
+        min-height: calc(100vh - 40px);
+        padding: 0px 50px;
+        margin: 0 20px;
+        border-radius: 30px;
+    }
 }
 
 
@@ -170,14 +228,14 @@ body.bg_main1 {
         padding: 20px 0;
     }
 
-    .wrap_main {
+    .wrap_main{
         width: initial;
         min-height: calc(100vh - 40px);
         padding: 0px 50px;
         margin: 0 20px;
         border-radius: 30px;
     }
-
+  
     .main_logo {
         top: 45px;
         left: 45px;
@@ -228,15 +286,36 @@ body.bg_main1 {
         display: inherit;
         padding: 40px;
     }
-
-    .wrap_main .left {
+    .wrap_main.end{
+        padding: 20px;
+    }
+    .wrap_main.end .main_logo{
+      left:20px
+    }
+    .wrap_main.end .left .title {
+        font-size: 30px;
+    }
+    .wrap_main.end .title span{
+        font-size: 26px;
+    }
+    .wrap_main.end .left .title em::after{
+       width: 5px;
+       height: 5px;
+       top:-10px
+    }
+    .wrap_main.end .left .subtxt{
+        font-size: 18px;
+    }
+    .wrap_main .left,.wrap_main.end .left{
         display: block;
         align-items: initial;
         width: 100%;
         padding: 70px 0 50px 0;
     }
-
-    .wrap_main .right {
+    .wrap_main.end .left{
+        padding: 110px 0 30px 0;
+    }
+    .wrap_main .right,.wrap_main.end .right {
         position: relative;
         z-index: 300;
         width: 100%;
@@ -260,6 +339,7 @@ body.bg_main1 {
     height: 780px;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    z-index: 10;
     }
     .pop_faq .faq_tit{
         height: 76px;
@@ -415,3 +495,4 @@ body.bg_main1 {
         }
     
     }
+

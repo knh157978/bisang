@@ -6,7 +6,7 @@ body {
 }
 
 body.bg_test {
-    background: url(../images/bg_test_cir.png) #f6f6fa no-repeat;
+    background: url(../images/bg_test_cir.png) #fafbfc no-repeat;
     background-size: cover;
 }
 
@@ -85,7 +85,7 @@ body.bg_test {
 }
 
 .test_title .num em {
-    color: #ff8444;
+    color: #047aff;
     font-weight: 900;
     font-size: 36px;
     font-style: normal;
@@ -121,7 +121,7 @@ body.bg_test {
     height: 40px;
     padding: 0 15px;
     border-radius: 20px;
-    background: #F04343;
+    background: #047aff;
     color: #fff;
     font-weight: 600;
     font-size: 18px;
@@ -156,7 +156,7 @@ body.bg_test {
     transform: translate(0%, -50%);
     margin-top: -2px;
     ;
-    color: #737373;
+    color: #1c1c1c;
     font-weight: 700;
     font-size: 26px;
 }
@@ -173,7 +173,7 @@ body.bg_test {
 }
 
 .notice_title em.st2 {
-    color: #ff732a;
+    color: #047aff;
 }
 
 
@@ -266,7 +266,7 @@ body.bg_test {
 }
 
 .whole_list li.on {
-    border: 3px solid #2395FF;
+    border: 3px solid #047aff;
     border-radius: 10px;
 }
 
@@ -289,7 +289,7 @@ body.bg_test {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #2395FF;
+    background-color: #047aff;
     opacity: .2;
     content: '';
 }
@@ -322,12 +322,13 @@ body.bg_test {
 }
 
 .assessment .tit1 em {
-    color: #4863FF;
+    color: #047aff;
     font-size: 48px;
     font-style: normal;
 }
 
 .assessment .tit2 {
+    margin-bottom: 60px;
     color: #737373;
     font-weight: 600;
     font-size: 24px;
@@ -335,7 +336,7 @@ body.bg_test {
 }
 
 .assessment .tit2 em {
-    color: #ff732a;
+    color: #047aff;
     font-style: normal;
     font-weight: 800;
 }
@@ -344,6 +345,26 @@ body.bg_test {
     top: -5px;
     left: 60px
 }
+
+.assessment .con {
+position: relative;
+width:560px; height: 315px;
+margin: 0 auto;
+}
+
+.assessment .con iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.assessment .con img {
+    width: initial;
+    max-width: 100%;
+}
+
 
 .test_btm .nav {
     display: flex;
@@ -361,7 +382,7 @@ body.bg_test {
 }
 
 .nav li.on {
-    background-color: #2395ff;
+    background-color: #047aff;
 }
 
 .nav li a {
@@ -383,7 +404,7 @@ body.bg_test {
     margin: 0 auto 10px auto;
     color: #000;
     background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff);
     border-radius: 32px;
     font-weight: 400;
     font-size: 28px;
@@ -402,7 +423,7 @@ body.bg_test {
     background: url(../images/ico_checked.png) no-repeat;
     background-size: 34.5px 25.5px;
     background-position: 20px 50%;
-    border: 2px solid #2395FF;
+    border: 2px solid #047aff;
     font-weight: 800;
 }
 
@@ -526,13 +547,18 @@ body.bg_test {
     height: 64px;
     left: calc(50% - 240px/2);
     bottom: 0;
-    background: #2395FF;
+    background: #047aff;
     border-radius: 32px;
     font-weight: 700;
     font-size: 24px;
     line-height: 64px;
     text-align: center;
     color: #fff;
+}
+
+.test_btm .btn_send.gray {
+    background-color: #f4f4f5;
+    color: #9b9b9b;
 }
 
 .btn_next {
@@ -778,7 +804,10 @@ body.bg_test {
         padding: 0 30px;
     }
 
-    .whole_list {height: initial; overflow: initial;}
+    .whole_list {
+        height: initial;
+        overflow: initial;
+    }
 
     .whole_list li {
         width: calc(33% - 23.3px);
@@ -794,6 +823,19 @@ body.bg_test {
     .assessment .tit1 em {
         font-size: 32px;
     }
+
+    .wrap_test.type2 .wrap_contents {
+        padding: 0 30px;
+    }
+
+    .assessment .con {
+        position: relative;
+        padding-top: 56.25%;
+        width:initial;
+        height: initial;
+        margin: initial;
+        }
+
 
 
 
@@ -1031,7 +1073,7 @@ body.bg_test {
 /*---------------------------------------------------------- 메인 ----------------------------------------------------------*/
 body.bg_main1 {
     position: relative;
-    background: url(../images/bg_main1.png) #f6f6fa no-repeat;
+    background: #6ab8ff;
     background-size: 100% 100%;
     padding: 70px 0;
 }
@@ -1274,4 +1316,98 @@ body.bg_main1 {
         background-position: center;
     }
 
+}
+
+
+
+
+
+
+
+
+/**************************************************************  404페이지 **************************************************************/
+
+.bg_main1.bg_404 {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    padding: 0;
+}
+
+.wrap_404 {
+    display: inline-block;
+    z-index: 9999;
+    position: relative;
+    padding: 50px 10%;
+}
+
+.wrap_404 .main_logo {
+    position: initial;
+    margin-bottom: 55px;
+}
+
+.wrap_404 .title {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    word-break: keep-all;
+}
+
+.wrap_404 .subtxt {
+    margin-bottom: 100px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    word-break: keep-all;
+}
+
+.wrap_404 .btn_gomain {
+    display: inline-block;
+    width: 387px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    color: #1B1C1E;
+}
+
+
+
+@media (max-width: 900px) {
+    .wrap_404 {
+        padding: 50px;
+    }
+
+    .wrap_404 .main_logo {
+        margin-bottom: 20px;
+    }
+
+    .wrap_404 .title {
+        font-size: 40px;
+    }
+
+    .wrap_404 .subtxt {
+        margin-bottom: 60px;
+        font-size: 20px;
+    }
+
+    .wrap_404 .btn_gomain {
+        font-size: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 576px) {
+    .wrap_404 .btn_gomain {
+        width: 100%
+    }
 }
