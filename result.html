@@ -33,12 +33,14 @@
        var wd=$(window).width();
        var boxLeft=$('.box_result').offset().left;
        var boxWidth=$('.box_result').width();
-      $('.btn_change').css("left", boxLeft + boxWidth-$('.btn_change').innerWidth()-50)
+       var space=wd<500?10:50
+      $('.btn_change').css("left", boxLeft + boxWidth-$('.btn_change').innerWidth()-space)
       $(window).resize(function(){
        wd=$(window).width();
        boxLeft=$('.box_result').offset().left;
        boxWidth=$('.box_result').width();
-       $('.btn_change').css("left", boxLeft + boxWidth-$('.btn_change').innerWidth()-50)
+       space=wd<500?10:50
+       $('.btn_change').css("left", boxLeft + boxWidth-$('.btn_change').innerWidth()-space)
       })
       })
    </script>
