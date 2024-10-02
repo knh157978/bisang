@@ -753,9 +753,9 @@ border: 1px solid #e1e1e1;
     transform: translate(-50% , -50%);
     border: 5px solid transparent;
     border-radius: 20px;
-    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #72D5FF 0%,  #B0A4FF 100%);
+    /* background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #72D5FF 0%,  #B0A4FF 100%);
     background-origin: border-box;
-    background-clip: content-box, border-box;
+    background-clip: content-box, border-box; */
    width: 600px;
    height: 256px;
    z-index: 10;
