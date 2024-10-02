@@ -2956,3 +2956,13 @@ overflow: hidden;
     }
   
 }
+
+@media (max-height:830px){
+    .landing_box{
+        top:20px;
+       bottom:20px;
+       height: auto;
+    }
+    
+  
+}
