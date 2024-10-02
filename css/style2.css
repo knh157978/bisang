@@ -1096,6 +1096,7 @@ body.bg_main1 {
     background: #047AFF;
     box-shadow: 15px 15px 40px 20px rgba(71, 109, 208, 0.28);
     border-radius: 60px;
+    z-index: 2;
 }
 
 .wrap_main .right {
