@@ -32,6 +32,7 @@
 /*비상교육 수학 진단 결과 분석*/
 .resultWrap{
  background: #f6f6fa;
+ padding-bottom: 100px;
  height: 100%;
  min-height: 100%;
  position: relative;
@@ -81,13 +82,6 @@
     width: 105px;
     margin-bottom: 20px;
     display: none;
-}
-.btn_top{
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom:30px;
-    right: 30px;
 }
 .resultWrap .tit .util{
     position: absolute;
@@ -429,7 +423,7 @@ border-top: 1px solid #E1E1E1;
  }
 .color_tbl {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 40px;
 }
  .color_tbl>div {
     width: 100%;
@@ -490,8 +484,6 @@ border-top: 1px solid #E1E1E1;
 
  .gra_process {
     position: relative;
-    height: 16px;
-    overflow: hidden;
  }
  .gra_process .graph{
     width: 230px;
@@ -907,7 +899,6 @@ overflow-y: auto;
 
 .bg_gray{
     background: #f6f6fa ;
-    height: auto;
 }
 .ico_robot_b{
     display: inline-block;
@@ -2736,218 +2727,3 @@ background: #2E2F33;
     }
 
 
-/*랜딩페이지*/
-.landing_box {
-    /* Rectangle 16804 */
-
-position: absolute;
-height:800px;
-left: 12.5%;
-right: 12.5%;
-top: calc(50% - 800px/2);
-
-background: #FFFFFF;
-/* Drop Shadow/400 */
-box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
-border-radius: 30px;
-overflow: hidden;
-}
-.landing-top{
- background: #FAFBFC;
- padding: 30px;
- text-align: center;
-}
-.landing-top .main_txt {
-    font-size: 24px;
-    color: #333;
-    line-height: 1.6em;
-}
-.landing-top .main_txt .main{
-    font-size: 34px;
-    font-weight: 700;
-}
-.landing-top .main_txt .main span{
-    font-size: 40px;
-    color: #047AFF;
-}
-.landing-top .my_info{
- margin: 30px 0;   
- justify-content: center;
- width: 100%;
-}
-.landing-top .my_info>div{
-    width: calc(33.333% - 20px);
-    margin-right: 20px;
-    border-radius: 10px;
-    border: 1px solid #E1E1E1;
-    background: #fff;
-    padding: 20px 10px;
-   font-weight: 600;
-   color: #333333;
-   font-size: 24px;
-   
-}
-.landing-top .my_info>div span{
-    display: block;
-    border-radius: 50px;
-    text-align: center;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 auto 10px  auto;
-    color: #fff;
-    font-weight: 500;
-    font-size: 20px;
-}
-.landing-top .my_info .my_fail1 span{
-      background: #FF732A;
-}
-.landing-top .my_info .my_fail2 span{
-    background: #FFAB71;
-}
-.landing-top .my_info .my_fail3 span{
-    background: #FFCEA8;
-}
-.landing-top .my_info>div:last-child{
-    margin-right: 0;
-}
-.landing-bottom .my_info{
-    justify-content: center;
-    align-content: flex-start;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-.landing-bottom{
-    text-align: center;
-    padding: 50px 30px;
-}
-.landing-bottom .main_txt .main{
-    font-size: 30px;
-    font-weight: 700;
-    color: #333333;
-    word-break: keep-all;
-}
-.landing-bottom .main_txt {
-    font-size: 24px;
-    color: #333;
-    line-height: 1.6em;
-}
-.landing-bottom .main_txt .main span{
-    color: #047AFF;
-}
-.landing-bottom .my_info>div{
-    width: calc(33.333% - 20px);
-    margin-right: 20px;
-    border-radius: 10px;
-    border: 1px solid #E1E1E1;
-    background: #fff;
-    font-weight: 600;
-    color: #333333;
-    font-size: 24px;
-    text-align: center;
-    overflow: hidden;
-    height: 310px;
-    padding: 20px;
-    
-}
-.landing-bottom .my_info>div:last-child{
-    margin-right: 0;
-}
-.landing-bottom .my_info>div span{
-    display: inline-block;
-    border-radius: 50px;
-    text-align: center;
-    padding: 0 30px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 auto 10px auto;
-    color: #fff;
-    font-weight: 500;
-    font-size: 20px;
-     background: #2E2F33;
-     color: #fff;
-}
-.landing-bottom .my_info>div .book{
-    max-height:67%;
-    margin: 0 auto ;
-}
-.landing-bottom .my_info>div .book img{
-    height: 100%;
-    width: auto;
-}
-
-@media (max-width:1300px){
-    .landing-top .my_info,.landing-bottom .my_info{
-        display: block;
-        width: 60%;
-        margin: 30px auto 0 auto;
-    }
-    .landing-top .my_info>div,.landing-bottom .my_info>div,.landing-top .my_info>div:last-child,.landing-bottom .my_info>div:last-child{
-        margin-right: 0;
-        width:100%;
-        margin:0 0 20px 0 ;
-    }
-    .landing_box{
-        overflow: auto;
-    }
-   
-}
-@media (max-width:830px){
-    .landing-top .my_info,.landing-bottom .my_info{
-        width: 80%;
-    }
-    .landing-top .my_info>div{
-        font-size: 20px;
-    }
-    .landing-top .my_info>div span, .landing-bottom .my_info>div span{
-        font-size: 18px;
-        height: 35px;
-        line-height: 35px;
-    }
-}
-
-@media (max-width:670px){
-    .landing-top .my_info,.landing-bottom .my_info{
-        width: 95%;
-    }
-    .landing_box{
-        left:5%;
-        right:5%;
-    }
-    .landing-top{
-        padding: 20px;
-    }
-    .landing-bottom{
-        padding: 30px 20px;
-    }
-    .landing-top .main_txt,  .landing-bottom .main_txt{
-        font-size: 20px;
-    }
-    .landing-top .main_txt .main{
-        font-size: 30px;
-        line-height: 1.5em;
-    }
-    .landing-top .main_txt .main span{
-        font-size: 34px;
-    }
-    .landing-bottom .main_txt .main{
-        font-size: 25px;
-        line-height: 1.35em;
-    }
-}
-@media (max-width:450px){
-    .landing-top .main_txt,  .landing-bottom .main_txt{
-        font-size: 16px;
-    }
-    .landing-top .my_info>div,.landing-bottom .my_info>div{
-        background: none;
-        border: 0;
-        padding: 0;
-        margin: 0 0 30px;
-    }
-    .landing-bottom .my_info>div{
-        height: auto;
-        margin: 0 0 50px;
-    }
-  
-}

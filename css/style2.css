@@ -1115,6 +1115,12 @@ body.bg_main1 {
     width: 387px;
     padding: 110px 0 50px 0;
 }
+.wrap_main.end .left{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    
+}
 
 .wrap_main .left .title {
     position: relative;
@@ -1124,7 +1130,31 @@ body.bg_main1 {
     font-weight: 800;
     font-size: 80px;
 }
+.wrap_main.end .left .title{
+    font-size: 43px;
+    line-height: 1.5em;
+    display: inline-block;
 
+}
+.wrap_main.end .left .title span{
+    display: block;
+    font-weight: 400;
+}
+.wrap_main.end .left .title span.bold{
+    display: block;
+    font-weight: 600;
+}
+.wrap_main.end .left .title em::after {
+  top:-5px
+}
+.wrap_main.end .left .title:after{
+    width: 100%;
+}
+.wrap_main.end .logo_w{
+    width: 132px;
+    margin: 30px auto 0 auto;
+    display:block;
+}
 .wrap_main .left .title::after {
 
     display: block;
@@ -1296,7 +1326,12 @@ body.bg_main1 {
         display: inherit;
         padding: 40px;
     }
-
+    .wrap_main.end{
+        padding: 20px;
+    }
+    .wrap_main.end .left .title{
+       font-size: 35px;
+    }
     .wrap_main .left {
         display: block;
         align-items: initial;

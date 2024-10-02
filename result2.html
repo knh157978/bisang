@@ -9,6 +9,29 @@
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <title>Document</title>
+    <script>
+        $(document).ready(function(){
+          $('.btn_expand').click(function(e){
+             $('.review dd').slideToggle('slow')
+            e.preventDefault()
+          });
+         $(window).scroll(function(){
+          if($(window).scrollTop()>100){
+            $('.resultWrap .tit').addClass('fixed');
+            $('.resultWrap .box_result').addClass('magin')
+            $('.btn_top').fadeIn()
+          }else{
+           $('.resultWrap .tit').removeClass('fixed');
+           $('.resultWrap .box_result').removeClass('magin')
+           $('.btn_top').fadeOut()
+          }
+         })
+         $('.btn_top').click(function(e){
+           $('html,body').scrollTop(0)
+           e.preventDefault()
+         })
+        })
+     </script>
 </head>
 <body class="bg_gray">
    <div class="resultWrap">
@@ -16,7 +39,11 @@
         <img src="images/logo_3.png" alt="">
      </div>
      <div class="result_area">
+     
      <div class="tit">
+        <div class="fix_logo">
+            <img src="images/logo_3.png" alt="">
+         </div>
         비상교육 수학 진단 결과 분석
         <div class="util">
         <a href="#" class="btn_share">결과 공유하기</a>
@@ -240,5 +267,8 @@
      </div>
     </div>
    </div>
+   
+   <a href="#" class="btn_top"><img src="images/btn_top.png" alt=""></a>
+
 </body>
 </html>

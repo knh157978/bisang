@@ -9,6 +9,29 @@
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <title>Document</title>
+    <script>
+      $(document).ready(function(){
+        $('.btn_expand').click(function(e){
+           $('.review dd').slideToggle('slow')
+          e.preventDefault()
+        });
+       $(window).scroll(function(){
+        if($(window).scrollTop()>100){
+          $('.resultWrap .tit').addClass('fixed');
+          $('.resultWrap .box_result').addClass('magin')
+          $('.btn_top').fadeIn()
+        }else{
+         $('.resultWrap .tit').removeClass('fixed');
+         $('.resultWrap .box_result').removeClass('magin')
+         $('.btn_top').fadeOut()
+        }
+       })
+       $('.btn_top').click(function(e){
+         $('html,body').scrollTop(0)
+         e.preventDefault()
+       })
+      })
+   </script>
 </head>
 <body class="bg_gray">
    <div class="resultWrap">
@@ -17,6 +40,9 @@
      </div>
      <div class="result_area">
      <div class="tit">
+      <div class="fix_logo">
+         <img src="images/logo_3.png" alt="">
+      </div>
         비상교육 수학 진단 결과 분석
         <div class="util">
         <a href="#" class="btn_share">결과 공유하기</a>
@@ -67,14 +93,6 @@
            </dd>
            </dl>  
 
-           <script>
-              $(document).ready(function(){
-                $('.btn_expand').click(function(e){
-                   $('.review dd').slideToggle('slow')
-                  e.preventDefault()
-                })
-              })
-           </script>
            <!--tab-->
            <ul class="result_tab">
               <li class="on"><a href="#">나의 강점은?</a></li>
@@ -85,6 +103,12 @@
            </ul>
            <div class="tab_pannel">
             <div class="chart">
+               <div class="gra_process">
+                  <div class="graph">
+                    <span class="step1"> 0</span>
+                    <span class="step3">100 </span>
+                  </div>
+                </div>
                <div class="color_tbl">
                   <div>
                       <table class="chart_tbl">   
@@ -97,10 +121,10 @@
                            <tr>                        
                               <td rowspan="2"  class="step2">최대공약수와<br>
                                    최소공배수</td>
-                              <td   class="step2">최대공약수와 그 활용</td>
+                              <td   class="step2 step2_1">최대공약수와 그 활용</td>
                            </tr>
                            <tr>                   
-                              <td  class="step3">최소공배수와 그 활용</td>
+                              <td  class="step3 step3_1">최소공배수와 그 활용</td>
                            </tr>   
                           </tbody>    
                           <tbody class="col2">         
@@ -112,25 +136,18 @@
                            <tr>                        
                               <td rowspan="2" class="step2">최대공약수와<br>
                                    최소공배수</td>
-                              <td class="step2" >최대공약수와 그 활용</td>
+                              <td class="step2 step2_1" >최대공약수와 그 활용</td>
                            </tr>
                            <tr>                   
-                              <td  class="step3">최소공배수와 그 활용</td>
+                              <td  class="step3 step3_1">최소공배수와 그 활용</td>
                            </tr> 
                           </tbody>                                             
                       </table>
                   </div>
-                  <div class="gra_process">
-                    <div class="graph">
-                      <span class="step1"> 100</span>
-                      <span class="step2"> 50</span>
-                      <span class="step3">0 </span>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
-            </div>
-            <ul class="qa_list">
+              <ul class="qa_list">
                <li><span>나의 강점1</span>정수와 유리수</li>
                <li><span>나의 강점2</span>정수와 유리수의 덧셈과 뺄셈</li>
                <li><span>나의 강점3</span>정수와 유리수의 곱셈과 나눗셈</li>
@@ -138,7 +155,9 @@
             <div class="result_txt">
                정수와 유리수와 관련된 단원에서 정말 뛰어난 성과를 보였어요! 특히 "정수와 유리수의 덧셈과
              뺄셈" 영역에 대한 개념을 아주 잘 이해하고 있다는 것을 알 수 있어요. 
-            </div>           
+            </div>   
+           
+         </div>        
            </div>
          <div class="box_right">
            <div class="accordion_head on">
@@ -171,5 +190,7 @@
      </div>
     </div>
    </div>
+   <a href="#" class="btn_top"><img src="images/btn_top.png" alt=""></a>
+  
 </body>
 </html>
