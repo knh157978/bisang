@@ -1084,6 +1084,7 @@ body.bg_main1 {
     height: 35%;
     background: url(../images/bg_main2.png) no-repeat;
     background-size: 100% 100%;
+    z-index: 2;
 }
 
 .wrap_main {
@@ -1096,7 +1097,7 @@ body.bg_main1 {
     background: #047AFF;
     box-shadow: 15px 15px 40px 20px rgba(71, 109, 208, 0.28);
     border-radius: 60px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .wrap_main .right {
