@@ -140,8 +140,9 @@
 .box_result{
     background: #fff;
     width: 100%;
-    border-radius: 30px 30px 0 0; 
+    border-radius: 30px ; 
 box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 12, 13, 0.05);
+overflow: hidden;
 }
 .box_result.margin{
     margin-top: 120px;
@@ -248,6 +249,7 @@ box-shadow: 0px 16px 32px -4px rgba(12, 12, 13, 0.1), 0px 4px 4px -4px rgba(12, 
     display: flex;
     border-top:2px solid #e1e1e1;
    padding: 0 50px 80px 50px;
+   background: #fcfcfc;
 }
 .box_con>div{
     width: calc(50% - 50px); 
@@ -278,6 +280,10 @@ box-sizing: border-box;
 padding-left: 20px;
  border: 1px solid #047AFF;
 /*background: linear-gradient(90deg, #72D5FF 0%, #B0A4FF 100%); */
+/* Rectangle 16805 */
+
+box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
+
 }
 .btn_qa input[type="text"]{
     width: calc(100% - 70px);
@@ -500,7 +506,7 @@ border-top: 1px solid #E1E1E1;
     right: 30px;
     height: 16px;
     top:0;
-    background: linear-gradient(45deg, #6A8CFF 0%, #FFFFFF 50%, #FF732A 100%);
+    background: linear-gradient(90deg, #6A8CFF 0%, #FFFFFF 50%, #FF732A 100%);
  }
  .gra_process .graph span{
     display: block;
@@ -744,7 +750,7 @@ border: 1px solid #e1e1e1;
     height: 100%;
     top:0;
     left: 0;
-    z-index: 2;
+    z-index: 101;
 }
 .pop_share{
     position: absolute;
@@ -759,7 +765,7 @@ border: 1px solid #e1e1e1;
     background-clip: content-box, border-box; */
    width: 600px;
    height: 256px;
-   z-index: 10;
+   z-index: 120;
 }
 .pop_share .btn_close{
     position: absolute;
@@ -2152,6 +2158,15 @@ position: relative;
     font-weight: 700;
     margin-top: 50px;
 }
+.lgmWrap .btn_area a:hover{
+    background: #186DCD;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .lgmWrap .btn_area a:hover{
+        background: #047AFF;
+    }
+  }
 .input_tbl {
     margin: 0 auto;
 }
@@ -2304,7 +2319,7 @@ position: relative;
     transform: translate(-50%,-50%);
     border-radius: 20px;
     text-align: center;
-    z-index: 10;
+    z-index: 101;
 
 }
 .alert_pop .pop_con{
@@ -2566,7 +2581,7 @@ background: #2E2F33;
     height: 780px;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    z-index: 10;
+    z-index: 120;
     }
     .pop_faq .faq_tit{
         height: 76px;
