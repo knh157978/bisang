@@ -1,0 +1,498 @@
+
+
+/*---------------------------------------------------------- 메인 ----------------------------------------------------------*/
+body.bg_main1 {
+    position: relative;
+    background: url(../images/bg_main1.png) #f6f6fa no-repeat;
+    background-size: 100% 100%;
+    padding: 70px 0;
+}
+
+body.bg_main3 {
+    position: relative;
+    background: #6AB8FF;
+    background-size: 100% 100%;
+    padding: 70px 0;
+}
+
+.bg_main2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background: url(../images/bg_main2.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrap_main {
+    display: flex;
+    position: relative;
+    width: 75%;
+    min-height: calc(100vh - 140px);
+    padding: 0px 130px;
+    margin: 0 auto;
+    background: #047AFF;
+    box-shadow: 15px 15px 40px 20px rgba(71, 109, 208, 0.28);
+    border-radius: 60px;
+}
+
+.wrap_main .right {
+    width: calc(100% - 387px);
+    min-height: calc(100vh - 240px);
+    margin: 50px 0;
+    background: url(../images/main_keyimg1.png) no-repeat;
+    background-size: contain;
+    background-position: right 50%;
+}
+
+.wrap_main .left {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 99999999;
+    width: 387px;
+    padding: 110px 0 50px 0;
+}
+
+.wrap_main .left .title {
+    position: relative;
+    padding-bottom: 43px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.wrap_main .left .title::after {
+
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+    content: '';
+}
+
+.wrap_main .left .title em {
+    display: inline-block;
+    position: relative;
+    font-style: normal;
+}
+
+.wrap_main .left .title em::after {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    content: '';
+}
+
+.wrap_main .left .subtxt {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 120%;
+    word-break: keep-all;
+    margin-bottom: 100px;
+}
+
+.wrap_main .left fieldset {
+    display: block;
+    width: 100%
+}
+
+.wrap_main .left fieldset select {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+    background: url(../images/ico_selectarr.png) no-repeat #2395ff 95% 50%;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.wrap_main .left fieldset .btn_start {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #1B1C1E;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+}
+
+
+
+.main_logo {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    width: 130px;
+    height: 47px;
+}
+
+    /*test-end*/
+    .wrap_main.end .left{
+        width: 50%;
+        padding-top: 140px;
+    }
+    .wrap_main.end.one .left {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .wrap_main.end.one .left .title {
+        display: inline-block;
+    }
+    .wrap_main.end.one .left .title::after{
+       width: 100%;
+    }
+    .wrap_main.end .right{
+        width:50%;
+    }
+    .wrap_main.end{
+        padding: 0 100px;
+    }
+    .wrap_main.end .left .title{
+        font-size: 42px;
+        line-height: 1.5em;
+        padding-bottom: 38px;
+    }
+    .wrap_main.end .title span{
+        display: block;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 1.35em;
+    }
+    .wrap_main.end .title span.bold{
+        font-weight: 700;
+    }
+    .wrap_main.end .subtxt{
+        line-height: 1.6em;
+    }
+
+
+
+/********************************************************** 메인 미디어쿼리 **********************************************************/
+
+
+@media (max-width: 1500px) {
+    .wrap_main {
+        padding: 0px 80px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .wrap_main {
+        width: 95%;
+    }
+   .wrap_main.end .left{
+        width: 60%;
+    }
+    .wrap_main.end .right{
+        width: 40%;
+    }
+    .wrap_main.end{
+        width: initial;
+        min-height: calc(100vh - 40px);
+        padding: 0px 50px;
+        margin: 0 20px;
+        border-radius: 30px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    body.bg_main1 {
+        padding: 20px 0;
+    }
+
+    .wrap_main{
+        width: initial;
+        min-height: calc(100vh - 40px);
+        padding: 0px 50px;
+        margin: 0 20px;
+        border-radius: 30px;
+    }
+  
+    .main_logo {
+        top: 45px;
+        left: 45px;
+        width: 90px;
+        height: 33px;
+    }
+
+    .wrap_main .left {
+        width: 50%;
+    }
+
+    .wrap_main .right {
+        width: calc(100% - 50%);
+    }
+
+    .wrap_main .left .subtxt {
+        margin-bottom: 50px;
+    }
+
+    .wrap_main .left .title {
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        font-size: 50px;
+    }
+
+    .wrap_main .left .title::after {
+        width: 50px;
+    }
+
+    .wrap_main .left .subtxt {
+        font-size: 20px;
+    }
+
+    .wrap_main .left fieldset select {
+        font-size: 20px;
+    }
+
+    .wrap_main .left fieldset .btn_start {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .wrap_main {
+        display: inherit;
+        padding: 40px;
+    }
+    .wrap_main.end{
+        padding: 20px;
+    }
+    .wrap_main.end .main_logo{
+      left:20px
+    }
+    .wrap_main.end .left .title {
+        font-size: 30px;
+    }
+    .wrap_main.end .title span{
+        font-size: 26px;
+    }
+    .wrap_main.end .left .title em::after{
+       width: 5px;
+       height: 5px;
+       top:-10px
+    }
+    .wrap_main.end .left .subtxt{
+        font-size: 18px;
+    }
+    .wrap_main .left,.wrap_main.end .left{
+        display: block;
+        align-items: initial;
+        width: 100%;
+        padding: 70px 0 50px 0;
+    }
+    .wrap_main.end .left{
+        padding: 110px 0 30px 0;
+    }
+    .wrap_main .right,.wrap_main.end .right {
+        position: relative;
+        z-index: 300;
+        width: 100%;
+        min-height: initial;
+        padding: 0 0 90% 0;
+        margin: 0;
+        background-position: center;
+    }
+
+}
+
+/*faq*/
+.pop_faq{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 1020px;
+    height: 780px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 10;
+    }
+    .pop_faq .faq_tit{
+        height: 76px;
+        line-height: 76px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        background: #2395FF;
+        padding-left: 30px;
+    }
+    .pop_faq .faq_tit .btn_close{
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: 30px;
+        background: url(../images/btn_close_w.png) no-repeat;
+        top:50%;
+        margin-top: -14px;
+    }
+    .pop_faq .faq_con{
+        height:100%;
+    }
+    .pop_faq .faq_info{
+        display: flex;
+        padding: 30px;
+        max-height: calc(100% - 80px);
+    }
+    .pop_faq .faq_info>div{
+        width: calc(50% - 15px);
+        margin-right: 30px;
+    }
+    .pop_faq .faq_info>div:last-child{
+        margin-right: 0;
+    }
+    .pop_faq .faq_info .faq_question{
+        overflow: auto;
+       
+    }
+    .faq_question li{
+        padding: 20px 0;
+        border-bottom: 1px solid #EEEEEE;
+       
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+    
+    .faq_question li a{
+        display: block;
+        color: #1C1C1C;
+    }
+    .faq_question li.on  a{
+        color:#4863FF ;
+        font-weight: 700;
+    }
+    .pop_faq .faq_info .faq_answer dl{
+        border: 2px solid transparent;
+        border-radius: 10px;
+        background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #72D5FF 0%,  #B0A4FF 100%);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        height: 100%;
+        overflow-y: auto;
+    
+    }
+    .pop_faq .faq_info .faq_answer dl dt{
+        font-size: 20px;
+        font-weight: 700;
+        color: #1C1C1C;
+        padding: 30px;
+        line-height: 1.5em;
+    }
+    .pop_faq .faq_info .faq_answer dl dd{
+        font-size: 16px;
+        color: #1C1C1C;
+        padding: 0 30px 30px 30px;
+        line-height: 1.6em;
+    }
+    
+    @media (max-width:1104px) {
+        .pop_faq{
+            width: 95%;
+        }
+    
+    }
+    @media (max-width:768px){
+        .pop_faq .faq_info{
+            max-height: calc(100% - 60px);
+        }
+        .pop_faq .faq_tit {
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;
+            padding-left:20px
+        }
+        .pop_faq .faq_tit .btn_close{
+            right: 20px;
+            background-size: 20px;
+            width: 20px;
+            height: 20px;
+            margin-top: -10px;
+        }
+        .pop_faq .faq_info{
+            padding: 20px;
+        }
+        .pop_faq .faq_info>div{
+            width: calc(50% - 10px);
+            margin-right: 20px;
+        }
+        .pop_faq .faq_info .faq_answer dl dt{
+            padding: 20px;
+        }
+        .pop_faq .faq_info .faq_answer dl dd{
+            padding: 0 20px 20px 20px;
+        }
+        .faq_question li {
+            font-size: 15px;
+        }
+        .pop_faq .faq_info .faq_answer dl dt{
+            font-size: 18px;
+        }
+        .pop_faq .faq_info .faq_answer dl dd {
+            font-size: 15px;
+        }
+    }
+    @media (max-width:600px){
+      
+        .pop_faq .faq_info{
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            overflow-y: auto;
+            max-height: calc( 100% - 70px);
+        }
+        .pop_faq .faq_info>div{
+            width: 100%;
+     
+        }
+        .pop_faq .faq_info .faq_question{
+            overflow: initial;
+        }
+        .faq_answer {
+            margin-top: 30px;
+        }
+        .faq_question li:first-child{
+            padding-top: 0;
+        }
+    }
+    
+    @media (max-height:800px){
+        .pop_faq{
+            height: 90%;
+        }
+    
+    }
+
