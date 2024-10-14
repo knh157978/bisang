@@ -2029,6 +2029,9 @@ height: 12px;
     position: relative;
     height: 100%;
 }
+.lower .lgmWrap .input_info{
+    background: url(../images/lower/bg_lgm.png) 50% 50% no-repeat;
+}
 .lgmWrap .input_info{
     text-align: center;
     background: url(../images/bg_lgm.png) 50% 50% no-repeat;
@@ -2042,6 +2045,9 @@ height: 12px;
     color: #1C1C1C;
     font-size: 40px;
     line-height: 1.5em;
+}
+.lower .lgmWrap .input_info .info_txt .hello{
+    color: #0B9B9B;
 }
 .lgmWrap .input_info .info_txt .hello{
     display: block;
@@ -2057,6 +2063,9 @@ height: 12px;
     color: #1C1C1C;
     font-weight: 400;
 }
+.lower .lgmWrap .btn_prev{
+    background: url(../images/lower/lgm_prev.png) no-repeat;
+}
 .lgmWrap .btn_prev{
     display: block;
     position: absolute;
@@ -2065,6 +2074,10 @@ height: 12px;
     background: url(../images/lgm_prev.png) no-repeat;
     left:13%;
     top:11%
+}
+.lower .lgmWrap .btn_close{
+    
+    background: url(../images/lower/lgm_x.png) no-repeat;
 }
 .lgmWrap .btn_close{
     display: block;
@@ -2086,6 +2099,9 @@ height: 12px;
     border-radius: 50px;
     background: #E9E9ED;
     margin-right: 40px;
+}
+.lower .lgmWrap .process span.on{
+    background: #0B9B9B;
 }
 .lgmWrap .process span.on{
     background: #047AFF;
@@ -2142,9 +2158,10 @@ position: relative;
     margin-left: 20px;
 }
 .lgmWrap .btn_area{
-    text-align: center;
-   
-   
+    text-align: center;  
+}
+.lower .lgmWrap .btn_area a{
+background: #0B9B9B;
 }
 .lgmWrap .btn_area a{
     display: inline-block;
@@ -2199,6 +2216,9 @@ position: relative;
     cursor: pointer;
     width: 270px;
     margin-left: 0;
+}
+.lower .input_tbl td button.on {
+  background:#0B9B9B ;
 }
 .input_tbl td button.on{
     background: #2395FF;
@@ -2474,6 +2494,9 @@ body.lower .alert_pop .pop_con .btn_area a.end {
         width: 35px;
         background-size: 35px;
     }
+
+
+
     .lgmWrap .input_info .info_txt .hello{
         padding-top: 15%;
     }
@@ -2490,6 +2513,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
     .input_field input{
         height: 70px;
     }
+ 
     .lgmWrap .input_info .info_txt .hello{
         font-size: 40px;
     }
