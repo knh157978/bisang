@@ -45,7 +45,7 @@
     top: 20px;
     width: 30px;
     height: 30px;
-    background: url(../images/btn_close.png) no-repeat;
+    background: url(../img/btn_close.png) no-repeat;
 }
 .resultWrap * {
     font-family:'Pretendard';
@@ -123,7 +123,7 @@
 .resultWrap .tit a.btn_share:before{
     display: inline-block;
     content: '';
-    background: url(../images/ico_share.png)50% 50% no-repeat;
+    background: url(../img/ico_share.png)50% 50% no-repeat;
     width: 20px;
     height: 20px;
     margin: -4px  10px 0 0 ;
@@ -133,7 +133,7 @@
 .resultWrap .tit a.btn_invite:before{
     display: inline-block;
     content: '';
-    background: url(../images/ico_in.png) 50% 50% no-repeat;
+    background: url(../img/ico_in.png) 50% 50% no-repeat;
     width: 25px;
     height: 25px;
     margin: -4px 10px 0 0;
@@ -301,7 +301,7 @@ box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
 
 .click_qa{
     display: block;
-    background: url(../images/btn_qa.png) 0 0 no-repeat;
+    background: url(../img/btn_qa.png) 0 0 no-repeat;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -331,7 +331,7 @@ box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.05);
 .box_con .review dt a{
     display: block;
     position: absolute;
-    background:url(../images/btn_plus.png) no-repeat;
+    background:url(../img/btn_plus.png) no-repeat;
     right: 30px;
     height: 36px;
     width: 36px;
@@ -528,7 +528,7 @@ border-top: 1px solid #E1E1E1;
     right: -130px;
  }
  .box_right .accordion_head.on:after{
- background: url(../images/arr_up.png)  50% 50% no-repeat;    
+ background: url(../img/arr_up.png)  50% 50% no-repeat;    
 }
 
  .box_right .accordion_head{
@@ -565,7 +565,7 @@ border: 1px solid #e1e1e1;
     top:50%;
     margin-top: -8px;
     right: 20px;
-    background: url(../images/arr_down.png) 50% 50% no-repeat;
+    background: url(../img/arr_down.png) 50% 50% no-repeat;
     
 
  }
@@ -629,7 +629,7 @@ border: 1px solid #e1e1e1;
      right: 20px;
      top:50%;
      margin-top: -9px;
-     background: url(../images/btn_change.png) no-repeat;
+     background: url(../img/btn_change.png) no-repeat;
  }
  .btn_err{
     display: inline-block;
@@ -647,7 +647,7 @@ border: 1px solid #e1e1e1;
  .btn_err:after{
     display: inline-block;
     content: '';
-    background: url(../images/ico_err_arr.png) no-repeat;
+    background: url(../img/ico_err_arr.png) no-repeat;
     width: 16px;
     height: 13px;
     vertical-align: middle;
@@ -686,7 +686,7 @@ border: 1px solid #e1e1e1;
     padding: 50px 40px 30px 40px;
  }
  .tendency_top{
-    background: url(../images/img_char.png) 100% 0 no-repeat;
+    background: url(../img/img_char.png) 100% 0 no-repeat;
     height: 220px;
     display: flex;
     align-items: center;
@@ -714,7 +714,7 @@ border: 1px solid #e1e1e1;
 }
 
 .box_tendency{
-    background: url(../images/img_char.png) no-repeat;
+    background: url(../img/img_char.png) no-repeat;
     height: 363px;
     position:relative;
 }
@@ -743,7 +743,7 @@ border: 1px solid #e1e1e1;
     left:-20px;
     width: 47px;
     height: 50px;
-    background: url(../images/ico_poly.png) no-repeat;
+    background: url(../img/ico_poly.png) no-repeat;
 }
 .dimed{
     position: fixed;
@@ -775,7 +775,7 @@ border: 1px solid #e1e1e1;
     top:20px;
     width: 30px;
     height: 30px;
-    background: url(../images/btn_close.png) no-repeat;
+    background: url(../img/btn_close.png) no-repeat;
 
 }
 .pop_share .sns_area{
@@ -792,25 +792,25 @@ border: 1px solid #e1e1e1;
     margin-right: 0;
 }
 .pop_share .sns_area a.insta{
-background: url(../images/ico_insta.png) no-repeat;
+background: url(../img/ico_insta.png) no-repeat;
 
 }
 .pop_share .sns_area a.utv{
-    background: url(../images/ico_utv.png) no-repeat;
+    background: url(../img/ico_utv.png) no-repeat;
 }
 .pop_share .sns_area a.blog{
-    background: url(../images/ico_nav.png) no-repeat;
+    background: url(../img/ico_nav.png) no-repeat;
 }
 
 .pop_share .sns_area a.kakao{
-    background: url(../images/ico_kakao.png) no-repeat;
+    background: url(../img/ico_kakao.png) no-repeat;
    
 }
 .pop_share .sns_area a.facebook{
-    background: url(../images/ico_face.png) no-repeat;
+    background: url(../img/ico_face.png) no-repeat;
 }
 .pop_share .sns_area a.twitter{
-    background: url(../images/ico_twitter.png) no-repeat;
+    background: url(../img/ico_twitter.png) no-repeat;
     width: 59px;
 }
 .pop_share .url{
@@ -876,7 +876,7 @@ background: url(../images/ico_insta.png) no-repeat;
     height: 24px;
     position: absolute;
     right: 30px;
-    background: url(../images/btn_close.png) no-repeat;
+    background: url(../img/btn_close.png) no-repeat;
     top: 50%;
     margin-top: -12px;
     background-size: 24px;
@@ -984,7 +984,7 @@ overflow-y: auto;
     margin-left: 40px;
 }
 .btn_ai_qa{
-    background:#047AFF url(../images/btn_qa.png) 50% 50% no-repeat;
+    background:#047AFF url(../img/btn_qa.png) 50% 50% no-repeat;
     width: 70px;
     height: 70px;
     display: block;
@@ -1090,7 +1090,7 @@ margin-left: 30px;
 
 
 .invitation_wrap{   
-    background: url(../images/bg_Invitation.png)  50% 100% no-repeat;
+    background: url(../img/bg_Invitation.png)  50% 100% no-repeat;
     background-size: cover;
     max-width: 768px;
     margin: 0 auto;
@@ -1104,7 +1104,7 @@ margin-left: 30px;
   top:50px;
   width: 30px;
   height: 30px;
-  background: url(../images/btn_close.png) no-repeat;
+  background: url(../img/btn_close.png) no-repeat;
   z-index: 10;
 
 }
@@ -1170,7 +1170,7 @@ border-radius: 44px;
    content: '';
    width: 33px;
    height: 33px;
-   background: url(../images/ico_pin.png)50% 50% no-repeat;
+   background: url(../img/ico_pin.png)50% 50% no-repeat;
    vertical-align:middle ;
    margin-right: 5px;
    margin-top: -4px;
@@ -1181,7 +1181,7 @@ border-radius: 44px;
     content: '';
     width: 33px;
     height: 33px;
-    background: url(../images/ico_cal.png)50% 50% no-repeat;
+    background: url(../img/ico_cal.png)50% 50% no-repeat;
     vertical-align:middle ;
     margin-right: 5px;
     margin-top: -4px;
@@ -1191,7 +1191,7 @@ border-radius: 44px;
     content: '';
     width: 33px;
     height: 33px;
-    background: url(../images/ico_clock.png)50% 50% no-repeat;
+    background: url(../img/ico_clock.png)50% 50% no-repeat;
     vertical-align:middle ;
     margin-right: 5px;
    margin-top: -4px;
@@ -1867,7 +1867,7 @@ border-radius: 44px;
 .endWrap{
     text-align: center;
     position: relative;
-    background: url(../images/bg_main1.png) #f6f6fa no-repeat;
+    background: url(../img/bg_main1.png) #f6f6fa no-repeat;
     width: 100%;
    height: 100%;
    background-size:100% 100%;
@@ -1881,7 +1881,7 @@ border-radius: 44px;
     left: 0;
     width: 100%;
     height: 35%;
-    background: url(../images/bg_main2.png) no-repeat;
+    background: url(../img/bg_main2.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -1923,7 +1923,7 @@ border-radius: 44px;
 .endWrap  ul li::before{
 display: inline-block;
 content: '';
-background: url(../images/bul_chk.png) no-repeat;
+background: url(../img/bul_chk.png) no-repeat;
 vertical-align: middle;
 margin-top: -4px;
 margin-right: 10px;
@@ -2033,7 +2033,7 @@ height: 12px;
 }
 .lgmWrap .input_info{
     text-align: center;
-    background: url(../images/bg_lgm.png) 50% 50% no-repeat;
+    background: url(../img/bg_lgm.png) 50% 50% no-repeat;
     background-size: cover;
     box-shadow: 0px 4px 11.3px rgba(0, 0, 0, 0.25);
     border-radius:0 0 80px 80px;
@@ -2064,7 +2064,7 @@ height: 12px;
     position: absolute;
     width: 36px;
     height: 56px;
-    background: url(../images/lgm_prev.png) no-repeat;
+    background: url(../img/lgm_prev.png) no-repeat;
     left:13%;
     top:11%
 }
@@ -2073,7 +2073,7 @@ height: 12px;
     position: absolute;
     width: 36px;
     height: 36px;
-    background: url(../images/lgm_x.png) no-repeat;
+    background: url(../img/lgm_x.png) no-repeat;
    right:13%;
     top:11%
 }
@@ -2212,7 +2212,7 @@ position: relative;
     height: 50px;
     width: 270px;
     text-align: center;
-    background: #fff url(../images/sel_arr.png) no-repeat 90% 50%; 
+    background: #fff url(../img/sel_arr.png) no-repeat 90% 50%; 
     -webkit-appearance: none; /* 네이티브 외형 감추기 */
     -moz-appearance: none;
     appearance: none;
@@ -2230,7 +2230,7 @@ position: relative;
     height: 50px;
     width: 270px;
     text-align: center;
-    background: #fff url(../images/sel_cir.png) no-repeat 90% 50%; 
+    background: #fff url(../img/sel_cir.png) no-repeat 90% 50%; 
     -webkit-appearance: none; /* 네이티브 외형 감추기 */
     -moz-appearance: none;
     appearance: none;
@@ -2256,7 +2256,7 @@ position: relative;
     text-align: left;
 }
 .input_field.type1 .fl2 select{
-    background: #fff url(../images/sel_arr.png) no-repeat 98% 50%; 
+    background: #fff url(../img/sel_arr.png) no-repeat 98% 50%; 
     width: 100%;
 }
 .input_field.type1 .fl2 .btn_select{
@@ -2286,7 +2286,7 @@ position: relative;
     position: absolute;
     right: 20px;
     top:50%;
-    background: url(../images/sel_arr.png) no-repeat;
+    background: url(../img/sel_arr.png) no-repeat;
     width: 26px;
     height: 21px;
     background-size: 26px;
@@ -2603,7 +2603,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
         height: 24px;
         position: absolute;
         right: 30px;
-        background: url(../images/btn_close.png) no-repeat;
+        background: url(../img/btn_close.png) no-repeat;
         top:50%;
         margin-top: -14px;
         background-size: 24px;
@@ -2644,7 +2644,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
         height: 13px;
         top:50%;
         transform: translateY(-50%);
-        background: url(../images/faq_arr.png);
+        background: url(../img/faq_arr.png);
     }
     
     .faq_question li a{
@@ -2656,7 +2656,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
         font-weight: 700;
     }
     .faq_question li.on:after{
-        background: url(../images/faq_arr_on.png);
+        background: url(../img/faq_arr_on.png);
     }
     .pop_faq .faq_info .faq_answer dl{
         border: 2px solid #E1E1E1;

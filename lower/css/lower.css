@@ -4,7 +4,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 /*lgm화면 저학년스킨*/
 .lower .lgmWrap .input_info {
-    background: url(../images/lower/bg_lgm.png) 50% 50% no-repeat;
+    background: url(../img/lower/bg_lgm.png) 50% 50% no-repeat;
 }
 
 .lower .lgmWrap .input_info .info_txt .hello {
@@ -12,12 +12,12 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .lgmWrap .btn_prev {
-    background: url(../images/lower/lgm_prev.png) no-repeat;
+    background: url(../img/lower/lgm_prev.png) no-repeat;
 }
 
 .lower .lgmWrap .btn_close {
 
-    background: url(../images/lower/lgm_x.png) no-repeat;
+    background: url(../img/lower/lgm_x.png) no-repeat;
 }
 
 .lower .lgmWrap .process span.on {
@@ -42,7 +42,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .click_qa {
-    background: url(../images/lower/btn_qa.png) 0 0 no-repeat;
+    background: url(../img/lower/btn_qa.png) 0 0 no-repeat;
 }
 
 .lower .result_tab li.on {
@@ -138,7 +138,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .box_right .accordion_head.on:after {
-    background: url(../images/lower/arr_up.png) 50% 50% no-repeat;
+    background: url(../img/lower/arr_up.png) 50% 50% no-repeat;
 }
 
 .lower .btn_err {
@@ -163,7 +163,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .invitation_wrap {
-    background: url(../images/lower/bg_Invitation.png) 50% 100% no-repeat;
+    background: url(../img/lower/bg_Invitation.png) 50% 100% no-repeat;
 }
 
 .lower .invitation_txt {
@@ -175,15 +175,15 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .info_list span:first-child::before {
-    background: url(../images/lower/ico_pin.png)50% 50% no-repeat;
+    background: url(../img/lower/ico_pin.png)50% 50% no-repeat;
 }
 
 .lower .info_list span:nth-child(2)::before {
-    background: url(../images/lower/ico_cal.png)50% 50% no-repeat;
+    background: url(../img/lower/ico_cal.png)50% 50% no-repeat;
 }
 
 .lower .info_list span:nth-child(3)::before {
-    background: url(../images/lower/ico_clock.png)50% 50% no-repeat;
+    background: url(../img/lower/ico_clock.png)50% 50% no-repeat;
 
 }
 
@@ -249,7 +249,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .wrap_main .left fieldset select {
-    background: url(../images/ico_selectarr.png) no-repeat #3CAFAF 95% 50%;
+    background: url(../img/ico_selectarr.png) no-repeat #3CAFAF 95% 50%;
 }
 
 
@@ -263,7 +263,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 /* 기타문제페이지 */
 .lower.bg_test {
-    background: url(../images/lower_bg_test_cir.png) #fafbfc no-repeat;
+    background: url(../img/lower_bg_test_cir.png) #fafbfc no-repeat;
 }
 
 .lower .assessment .tit1 em {
@@ -275,12 +275,12 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .btn_prev {
-    background: url(../images/lower_btn_prev.svg) no-repeat;
+    background: url(../img/lower_btn_prev.svg) no-repeat;
     background-size: 100% 100%;
 }
 
 .lower .btn_next {
-    background: url(../images/lower_btn_next.svg) no-repeat;
+    background: url(../img/lower_btn_next.svg) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -307,7 +307,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 .lower .check_answer input[type="radio"]:checked+span {
     color: #0b9b9b;
-    background: url(../images/lower_ico_checked.png) no-repeat;
+    background: url(../img/lower_ico_checked.png) no-repeat;
     background-size: 34.5px 25.5px;
     background-position: 20px 50%;
     border: 2px solid #0b9b9b;
@@ -322,7 +322,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .whole_list li.on::before {
-    background: url(../images/lower_ico_on.svg) no-repeat;
+    background: url(../img/lower_ico_on.svg) no-repeat;
 }
 
 .lower .whole_list li.on::after {
