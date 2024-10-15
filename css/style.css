@@ -852,7 +852,7 @@ background: url(../images/ico_insta.png) no-repeat;
     transform: translate(-50%,-50%);
     border-radius: 15px;
     overflow: hidden;
-    z-index: 10;
+    z-index: 200;
 }
 .logo_ai{
     width: 150px;
