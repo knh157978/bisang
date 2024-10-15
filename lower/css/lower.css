@@ -263,7 +263,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 /* 기타문제페이지 */
 .lower.bg_test {
-    background: url(../img/lower_bg_test_cir.png) #fafbfc no-repeat;
+    background: url(../img/lower/bg_test_cir.png) #fafbfc no-repeat;
 }
 
 .lower .assessment .tit1 em {
@@ -275,12 +275,12 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .btn_prev {
-    background: url(../img/lower_btn_prev.svg) no-repeat;
+    background: url(../img/lower/btn_prev.svg) no-repeat;
     background-size: 100% 100%;
 }
 
 .lower .btn_next {
-    background: url(../img/lower_btn_next.svg) no-repeat;
+    background: url(../img/lower/btn_next.svg) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -307,7 +307,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 .lower .check_answer input[type="radio"]:checked+span {
     color: #0b9b9b;
-    background: url(../img/lower_ico_checked.png) no-repeat;
+    background: url(../img/lower/ico_checked.png) no-repeat;
     background-size: 34.5px 25.5px;
     background-position: 20px 50%;
     border: 2px solid #0b9b9b;
@@ -322,7 +322,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 }
 
 .lower .whole_list li.on::before {
-    background: url(../img/lower_ico_on.svg) no-repeat;
+    background: url(../img/lower/ico_on.svg) no-repeat;
 }
 
 .lower .whole_list li.on::after {
