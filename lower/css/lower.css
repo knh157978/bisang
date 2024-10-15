@@ -1,0 +1,330 @@
+body.lower .alert_pop .pop_con .btn_area a.end {
+    background: #0B9B9B;
+}
+
+/*lgm화면 저학년스킨*/
+.lower .lgmWrap .input_info {
+    background: url(../images/lower/bg_lgm.png) 50% 50% no-repeat;
+}
+
+.lower .lgmWrap .input_info .info_txt .hello {
+    color: #0B9B9B;
+}
+
+.lower .lgmWrap .btn_prev {
+    background: url(../images/lower/lgm_prev.png) no-repeat;
+}
+
+.lower .lgmWrap .btn_close {
+
+    background: url(../images/lower/lgm_x.png) no-repeat;
+}
+
+.lower .lgmWrap .process span.on {
+    background: #0B9B9B;
+}
+
+.lower .lgmWrap .btn_area a {
+    background: #0B9B9B;
+}
+
+.lower .input_tbl td button.on {
+    background: #0B9B9B;
+}
+
+/*결과분석화면*/
+.lower .my_info>li .score {
+    color: #0B9B9B;
+}
+
+.lower .btn_qa {
+    border: 1px solid #3CAFAF;
+}
+
+.click_qa {
+    background: url(../images/lower/btn_qa.png) 0 0 no-repeat;
+}
+
+.lower .result_tab li.on {
+    background: #0B9B9B;
+}
+
+.lower .result_tab {
+    border-bottom: 1px solid #0B9B9B;
+}
+
+.lower .gra_process .graph {
+    background: linear-gradient(90deg, #3CAFAF 0%, #FFFFFF 50%, #FE7565 100%);
+}
+
+.lower .color_tbl>div .chart_tbl .col1 th {
+    background: #FFE3E0;
+}
+
+.lower .color_tbl>div .chart_tbl .col1 .step1 {
+    background: #FFC8C1;
+}
+
+.lower .color_tbl>div .chart_tbl .col1 .step2 {
+    background: #FE9184;
+}
+
+.lower .color_tbl>div .chart_tbl .col1 .step3 {
+    background: #FE7565;
+}
+
+.lower .color_tbl>div .chart_tbl .col2 th {
+    background: #6DC3C3;
+}
+
+.lower .color_tbl>div .chart_tbl .col2 .step1 {
+    background: #3CAFAF;
+}
+
+.lower .color_tbl>div .chart_tbl .col2 .step2 {
+    background: #6DC3C3;
+}
+
+.lower .color_tbl>div .chart_tbl .col2 .step3 {
+    background: #CEEBEB;
+}
+
+.lower .color_tbl>div .chart_tbl .col2 .step4 {
+    background: #EDF8F8;
+}
+
+.lower .qa_list li:nth-child(1) span {
+    background: #3CAFAF;
+}
+
+.lower .qa_list li:nth-child(2) span {
+    background: #6DC3C3;
+}
+
+.lower .qa_list li:nth-child(3) span {
+    background: #CEEBEB;
+}
+
+
+.lower .qa_list.weak li:nth-child(1) span {
+    background: #FE7565;
+}
+
+.lower .qa_list.weak li:nth-child(2) span {
+    background: #FE9184;
+}
+
+.lower .qa_list.weak li:nth-child(3) span {
+    background: #FFC8C1;
+}
+
+.lower .accodion_pan {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.lower .box_right .accordion_head {
+    border: 0;
+}
+
+.lower .box_right .accordion_head.on {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.lower .result_txt {
+    background: #fff;
+}
+
+.lower .box_right .accordion_head.on:after {
+    background: url(../images/lower/arr_up.png) 50% 50% no-repeat;
+}
+
+.lower .btn_err {
+    background: #9DD7D7;
+}
+
+.lower .tbl_err tr.fail td {
+    background: #EDF8F8;
+}
+
+.lower .tbl_err tr th,
+.lower .tbl_err tr td {
+    border-bottom: 1px solid #CEEBEB;
+}
+
+.lower .tendency_tit {
+    color: #0B9B9B;
+}
+
+.lower .pop_share .url button {
+    background: #0B9B9B;
+}
+
+.lower .invitation_wrap {
+    background: url(../images/lower/bg_Invitation.png) 50% 100% no-repeat;
+}
+
+.lower .invitation_txt {
+    background: #0B9B9B
+}
+
+.lower .info_txt .in_blue {
+    color: #0B9B9B
+}
+
+.lower .info_list span:first-child::before {
+    background: url(../images/lower/ico_pin.png)50% 50% no-repeat;
+}
+
+.lower .info_list span:nth-child(2)::before {
+    background: url(../images/lower/ico_cal.png)50% 50% no-repeat;
+}
+
+.lower .info_list span:nth-child(3)::before {
+    background: url(../images/lower/ico_clock.png)50% 50% no-repeat;
+
+}
+
+.lower .ai_tit {
+    border-bottom: 2px solid #3CAFAF;
+}
+
+.lower .answer_list dt .step span.on {
+    background: #0B9B9B;
+}
+
+.lower .answer_list dd {
+    background: #fff;
+    border: 1px solid #3CAFAF;
+}
+
+/*랜딩*/
+.lower .landing-top .main_txt .main span,
+.lower .landing-bottom .main_txt .main span {
+    color: #0B9B9B
+}
+
+.lower .landing-top .my_info .my_fail1 span {
+    background: #FE7565;
+}
+
+.lower .landing-top .my_info .my_fail2 span {
+    background: #FE9184;
+}
+
+.lower .landing-top .my_info .my_fail3 span {
+    background: #FFC8C1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** 20241014 es 작업 ***************/
+
+/* 메인 */
+.lower.bg_main1 {
+    background: #7bc9c9;
+}
+
+.lower .wrap_main {
+    background: #3CAFAF;
+    box-shadow: 15px 15px 40px 20px rgba(71, 208, 191, 0.28);
+}
+
+.lower .wrap_main .left fieldset select {
+    background: url(../images/ico_selectarr.png) no-repeat #3CAFAF 95% 50%;
+}
+
+
+
+/* 404 */
+.lower.bg_main1.bg_404 {
+    background: #58a6a6;
+}
+
+
+
+/* 기타문제페이지 */
+.lower.bg_test {
+    background: url(../images/lower_bg_test_cir.png) #fafbfc no-repeat;
+}
+
+.lower .assessment .tit1 em {
+    color: #0b9b9b
+}
+
+.lower .assessment .tit2 em {
+    color: #0b9b9b
+}
+
+.lower .btn_prev {
+    background: url(../images/lower_btn_prev.svg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lower .btn_next {
+    background: url(../images/lower_btn_next.svg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.lower .nav li.on {
+    background-color: #0b9b9b;
+}
+
+.lower .test_btm .btn_send {
+    background-color: #0b9b9b;
+}
+
+.lower .tf_input {
+    border: 2px solid #0b9b9b;
+}
+
+.lower .fraction hr {
+    border: 2px solid #0b9b9b;
+}
+
+
+.lower .test_title .num em {
+    color: #0b9b9b
+}
+
+.lower .check_answer input[type="radio"]:checked+span {
+    color: #0b9b9b;
+    background: url(../images/lower_ico_checked.png) no-repeat;
+    background-size: 34.5px 25.5px;
+    background-position: 20px 50%;
+    border: 2px solid #0b9b9b;
+}
+
+.lower .notice_title em.st2 {
+    color: #0b9b9b;
+}
+
+.lower .whole_list li.on {
+    border: 3px solid #0b9b9b;
+}
+
+.lower .whole_list li.on::before {
+    background: url(../images/lower_ico_on.svg) no-repeat;
+}
+
+.lower .whole_list li.on::after {
+    background-color: #0b9b9b;
+}

@@ -6,6 +6,7 @@
     <link href="css/swiper-bundle.min.css" rel="stylesheet" media="all" />
     <link href="css/base.css" rel="stylesheet" media="all" />
     <link href="css/style.css" rel="stylesheet" media="all" />
+    <link href="css/lower.css" rel="stylesheet" media="all" />
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <title>Document</title>
@@ -18,11 +19,11 @@
        $(window).scroll(function(){
         if($(window).scrollTop()>100){
           $('.resultWrap .tit').addClass('fixed');
-          $('.resultWrap .box_result').addClass('magin')
+          $('.resultWrap .box_result').addClass('margin')
           $('.btn_top').fadeIn()
         }else{
          $('.resultWrap .tit').removeClass('fixed');
-         $('.resultWrap .box_result').removeClass('magin')
+         $('.resultWrap .box_result').removeClass('margin')
          $('.btn_top').fadeOut()
         }
        })
@@ -58,7 +59,7 @@
       })
    </script>
 </head>
-<body class="bg_gray">
+<body class="bg_gray lower">
    <div class="resultWrap">
      <div class="logo3">
         <img src="images/logo_3.png" alt="">
@@ -161,10 +162,10 @@
                            <tr>                        
                               <td rowspan="2" class="step2">최대공약수와<br>
                                    최소공배수</td>
-                              <td class="step2 step2_1" >최대공약수와 그 활용</td>
+                              <td class="step3 step2_1" >최대공약수와 그 활용</td>
                            </tr>
                            <tr>                   
-                              <td  class="step3 step3_1">최소공배수와 그 활용</td>
+                              <td  class="step4 step3_1">최소공배수와 그 활용</td>
                            </tr> 
                           </tbody>                                             
                       </table>
