@@ -479,6 +479,7 @@ body.bg_test {
 
 
 .tfgroup_type2 li {
+    display: flex;
     margin-bottom: 10px;
 }
 
@@ -572,7 +573,7 @@ body.bg_test {
 }
 
 .test_btm .btn_send.gray {
-    background-color: #f4f4f5;
+    background-color: #f4f4f5!important;
     color: #9b9b9b;
 }
 

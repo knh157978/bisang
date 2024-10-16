@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" media="all" />
+    <link href="css/base.css" rel="stylesheet" media="all" />
+    <link href="css/style.css" rel="stylesheet" media="all" />
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <title>Document</title>
+    <script>
+      $(document).ready(function(){
+        $('.btn_expand').click(function(e){
+           $('.review dd').slideToggle('slow')
+          e.preventDefault()
+        });
+       $(window).scroll(function(){
+        if($(window).scrollTop()>100){
+          $('.resultWrap .tit').addClass('fixed');
+          $('.resultWrap .box_result').addClass('magin')
+          $('.btn_top').fadeIn()
+        }else{
+         $('.resultWrap .tit').removeClass('fixed');
+         $('.resultWrap .box_result').removeClass('magin')
+         $('.btn_top').fadeOut()
+        }
+       })
+       $('.btn_top').click(function(e){
+         $('html,body').scrollTop(0)
+         e.preventDefault()
+       })
+       var wd=$(window).width();
+       var boxLeft=$('.box_result').offset().left;
+       var boxWidth=$('.box_result').width();
+       var space=50
+       if(wd<=1440){       
+          space=30
+       }
+       if(wd<=1180){         
+         space=20
+       }
+      $('.btn_change').css("left", boxLeft + boxWidth-$('.btn_change').innerWidth()-space)
+      $('.btn_top').css("left", boxLeft + boxWidth-$('.btn_top').innerWidth()-space)
+      $(window).resize(function(){
+       wd=$(window).width();
+       boxLeft=$('.box_result').offset().left;
+       boxWidth=$('.box_result').width();
+       if(wd<=1440){       
+          space=30
+       }
+       if(wd<=1180){         
+         space=20
+       }
+       $('.btn_change').css("left", boxLeft + boxWidth-$('.btn_change').innerWidth()-space)
+       $('.btn_top').css("left", boxLeft + boxWidth-$('.btn_top').innerWidth()-space)
+      })
+      })
+   </script>
+</head>
+<body class="bg_gray ">
+   <div class="resultWrap">
+     <div class="logo3">
+        <img src="img/logo_3.png" alt="">
+     </div>
+     <div class="result_area">
+     <div class="tit">
+      <div class="fix_logo">
+         <img src="img/logo_3.png" alt="">
+      </div>
+        비상교육 수학 진단 결과 분석
+        <div class="util">
+        <a href="#" class="btn_share">결과 공유하기</a>
+        <a href="#" class="btn_invite">진단 초대하기</a>
+    </div>
+     </div>
+     <div class="box_result">
+       <ul class="my_info">
+         <li>
+            <span class="score">72</span>
+            <span class="txt">점</span>
+         </li>
+         <li>
+            <dl class="standard">
+                <dt>전국기준</dt>
+                <dd>205255등 <span>(34.22%)</span></dd>
+            </dl>
+         </li>
+         <li>
+            <dl class="standard">
+                <dt>지역기준</dt>
+                <dd>102555등 <span>(30.82%)</span></dd>
+            </dl>
+         </li>
+         <li>
+            <dl class="info_eval">
+               <dt>평가일 :</dt>
+               <dd>2024-09-13</dd>
+               <dt>진단지 : </dt>
+               <dd>[중1수학] 진단 2기</dd>
+               <dt>진단과목 :  </dt>
+               <dd>수학</dd>
+            </dl>      
+         </li>
+       </ul>
+       <div class="box_con">
+         <div class="box_left">
+           <div class="btn_qa">
+            <input type="text" placeholder="클릭하여 비상 AI에게 궁금한 점을 물어보세요.">
+            <a href="#" class="click_qa"></a>
+           </div>
+           <dl class="review">
+           <dt>
+            총평 <a href="#" class="btn_expand"></a>
+           </dt>
+           <dd>
+            이번 진단평가에서 멋진 청바지님은 정수와 유리수 단원에서 매우 뛰어난 성과를 보이며 강점을 드러냈습니다. 특히 연산 부분에서 깊은 이해를 보여주었어요. 반면, 최대공약수와 최소공배수 단원에서는 약간의 어려움을 겪었으며, 추가적인 학습이 필요합니다. 강점을 살리면서 약점을 보완해 나간다면 앞으로 더욱 좋은 성과를 낼 수 있을 것입니다. 꾸준한 노력으로 성장해 나가길 기대합니다!
+           </dd>
+           </dl>  
+
+           <!--tab-->
+           <ul class="result_tab">
+              <li><a href="#">나의 강점은?</a></li>
+              <li><a href="#">나의 약점은?</a></li>
+              <li  class="on"><a href="#" >지식맵</a></li>
+              <li><a href="#">예측점수</a></li>
+              <li><a href="#">성향</a></li>
+           </ul>
+           <div class="tab_pannel">
+            <div class="chart">
+                <div class="right_btns">
+                    <a href="#">대단원</a>
+                    <a href="#" class="on">중단원</a>
+                    <a href="#">소단원</a>
+                </div>
+               <div class="gra_process">
+                  <div class="graph">
+                    <span class="step1"> 0</span>
+                    <span class="step3">100 </span>
+                  </div>
+                </div>
+               <div class="color_tbl">
+                  <div>
+                      <table class="chart_tbl">   
+                          <tbody class="col1">                
+                           <tr>
+                              <th rowspan="3">소인수분해</th>
+                              <td class="step1">소인수분해</td>
+                              <td  class="step1">소인수분해</td>
+                           </tr>
+                           <tr>                        
+                              <td rowspan="2"  class="step2">최대공약수와<br>
+                                   최소공배수</td>
+                              <td   class="step2 step2_1">최대공약수와 그 활용</td>
+                           </tr>
+                           <tr>                   
+                              <td  class="step3 step3_1">최소공배수와 그 활용</td>
+                           </tr>   
+                          </tbody>    
+                          <tbody class="col2">         
+                           <tr >
+                              <th rowspan="3">정수와 유리수</th>
+                              <td  class="step1">소인수분해</td>
+                              <td class="step1">소인수분해</td>
+                           </tr>
+                           <tr>                        
+                              <td rowspan="2" class="step2">최대공약수와<br>
+                                   최소공배수</td>
+                              <td class="step2 step2_1" >최대공약수와 그 활용</td>
+                           </tr>
+                           <tr>                   
+                              <td  class="step3 step3_1">최소공배수와 그 활용</td>
+                           </tr> 
+                          </tbody>                                             
+                      </table>
+                  </div>
+                  
+                </div>
+              </div>
+              <ul class="qa_list">
+               <li><span>나의 강점1</span>정수와 유리수</li>
+               <li><span>나의 강점2</span>정수와 유리수의 덧셈과 뺄셈</li>
+               <li><span>나의 강점3</span>정수와 유리수의 곱셈과 나눗셈</li>
+            </ul>
+            <div class="result_txt">
+               정수와 유리수와 관련된 단원에서 정말 뛰어난 성과를 보였어요! 특히 "정수와 유리수의 덧셈과
+             뺄셈" 영역에 대한 개념을 아주 잘 이해하고 있다는 것을 알 수 있어요. 
+            </div>   
+           
+         </div>        
+           </div>
+         <div class="box_right">
+           <div class="accordion_head on">
+            내 위치는 어디쯤?
+           </div>
+           <div class="accodion_pan">
+            <div class="chart">
+            <img src="img/chart2.png" alt="">
+            </div>
+            <div class="result_txt">
+               정수와 유리수와 관련된 단원에서 정말 뛰어난 성과를 보였어요! 특히 "정수와 유리수의 덧셈과
+              뺄셈" 영역에 대한 개념을 아주 잘 이해하고 있다는 것을 알 수 있어요. 
+            </div>
+            <div class="al_right">
+              <a href="#" class="btn_err">정오표보기</a>
+            </div>
+           </div>
+           <div class="accordion_head">
+            단원별 정답률은?
+           </div>
+           <div class="accordion_head">
+            난이도별 정답률은?
+           </div>
+           <div class="accordion_head"> 문제별 풀이시간은?</div>
+          
+           <a href="#" class="btn_change">내 약점을 강점으로 만들기</a>       
+           </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   </div>
+   <a href="#" class="btn_top"><img src="img/btn_top.png" alt=""></a>
+  
+</body>
+</html>

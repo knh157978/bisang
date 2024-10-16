@@ -386,6 +386,25 @@ border-top: 1px solid #E1E1E1;
  .tab_pannel{
     padding: 20px 0 0 0;
  }
+ .right_btns{
+    text-align: right;
+    margin-right: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+ }
+ .right_btns a{
+    display: inline-block;
+    color: #9A9A9A;
+    margin-right: 20px;
+
+ }
+ .right_btns a:last-child{
+    margin-right: 0;
+ }
+ .right_btns a.on{
+    color:#333 ;
+ }
  .qa_list {
     margin: 30px 0;
  }
@@ -416,15 +435,6 @@ border-top: 1px solid #E1E1E1;
   background: #BCD4FF;
  }
  .qa_list.weak li:nth-child(1) span{
-    background: #6A8CFF;
-   }
-   .qa_list.weak li:nth-child(2) span{
-    background: #94B6FF;
-   }
-   .qa_list.weak li:nth-child(3) span{
-    background: #BCD4FF;
-   }
-   .qa_list.weak li:nth-child(1) span{
     background: #FF732A;
    }
    .qa_list.weak li:nth-child(2) span{
@@ -478,7 +488,7 @@ border-top: 1px solid #E1E1E1;
     padding: 10px;
     color: #333;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.5em;
  }
  .color_tbl>div  .chart_tbl .col1 th{
     background: #FFCEA8;
