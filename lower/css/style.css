@@ -1600,22 +1600,21 @@ border-radius: 44px;
         border-radius: 40px;
         word-break: break-all;
     }
- 
-}
+    .tendency_tit {
+        width: 50%;
+        font-size: 30px;
+    }
 @media screen and (max-width:560px){
     .tendency{
         padding: 20px;
     }
 
-    .tendency_tit {
-        width: 50%;
-        font-size: 30px;
-    }
+
     .tendency_info {
         font-size: 18px;
     }
     .tendency_top{     
-        background-position-x: 100%;
+        background-position-x:90%;
         background-size: 180px;
         height: 160px;
       }
@@ -1695,6 +1694,9 @@ border-radius: 44px;
     }
 }
 @media screen and (max-width:480px){
+    .tendency_top{
+        background-size: 150px;
+    }
     .box_tendency {
         background-size: 300px;
         height: 250px;
@@ -1737,6 +1739,7 @@ border-radius: 44px;
  
 }
 @media screen and (max-width:430px){
+
     .info_txt {font-size: 20px;}
     .box_top {
         font-size: 18px;
