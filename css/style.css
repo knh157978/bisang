@@ -1604,6 +1604,7 @@ border-radius: 44px;
         width: 50%;
         font-size: 30px;
     }
+}
 @media screen and (max-width:560px){
     .tendency{
         padding: 20px;
@@ -2985,6 +2986,7 @@ overflow: hidden;
         line-height: 1.35em;
     }
 }
+
 @media (max-width:450px){
     .landing-top .main_txt,  .landing-bottom .main_txt{
         font-size: 16px;
@@ -3003,11 +3005,11 @@ overflow: hidden;
 }
 
 @media (max-height:830px){
-    .landing_box{
-        top:10px;
-       bottom:10px;
-       height: auto;
+    .landing_box
+    {  top:10px;
+        bottom:10px;
+        height: auto;
     }
     
-  
 }
+
