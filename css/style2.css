@@ -1226,7 +1226,7 @@ body.bg_main1 {
     font-size: 26px;
     line-height: 120%;
     word-break: keep-all;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .wrap_main .left fieldset {
@@ -1264,7 +1264,10 @@ body.bg_main1 {
     text-align: center;
 }
 
-
+.wrap_main .left fieldset .btn_start.faq{
+    font-weight: 400;
+    margin-top: 20px;
+}
 
 .main_logo {
     display: block;
