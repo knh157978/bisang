@@ -328,3 +328,11 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 .lower .whole_list li.on::after {
     background-color: #0b9b9b;
 }
+
+.lower .pop_faq .faq_tit{
+    border-bottom: 2px solid #0B9B9B;
+}
+
+.lower .faq_question li.on a{
+    color:#0B9B9B
+}
