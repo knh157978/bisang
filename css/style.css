@@ -705,10 +705,11 @@ border: 1px solid #e1e1e1;
     padding: 50px 40px 30px 40px;
  }
  .tendency_top{
-    background: url(../img/img_char.png) 100% 0 no-repeat;
+    background: url(../img/7013-A.png) 100% 0 no-repeat;
     height: 220px;
     display: flex;
     align-items: center;
+    background-size: contain;
  }
  .tendency_tit{
     color:#047AFF;
@@ -1512,7 +1513,6 @@ border-radius: 44px;
         width: 50%;
     }
     .tendency_top{     
-        background-position-x: 90%;
         background-size: 230px;
       }
       
@@ -1615,7 +1615,6 @@ border-radius: 44px;
         font-size: 18px;
     }
     .tendency_top{     
-        background-position-x:90%;
         background-size: 180px;
         height: 160px;
       }
@@ -1696,7 +1695,7 @@ border-radius: 44px;
 }
 @media screen and (max-width:480px){
     .tendency_top{
-        background-size: 120px;
+        background-size: 140px;
     }
     .box_tendency {
         background-size: 300px;
@@ -1813,7 +1812,7 @@ border-radius: 44px;
     .tendency_tit span{font-size: 16px;}
     .tendency_top{     
         background-position-x: 100%;
-        background-size: 140px;
+        background-size: contain;
         height: 120px;
       } 
     .resultWrap .tit{
