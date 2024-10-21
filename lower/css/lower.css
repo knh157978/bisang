@@ -305,7 +305,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
     color: #0b9b9b
 }
 
-.lower .check_answer input[type="radio"]:checked+span {
+.lower .check_answer input[type="checkbox"]:checked+span {
     color: #0b9b9b;
     background: url(../img/lower/ico_checked.png) no-repeat;
     background-size: 34.5px 25.5px;
