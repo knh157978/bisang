@@ -493,19 +493,32 @@ body.bg_test {
 
 .tfgroup_type2 label {
     display: inline-block;
-    width: 80px;
+
     height: 80px;
     font-weight: 400;
     font-size: 40px;
     line-height: 80px;
+    flex-shrink: 0;
 
 }
 
 .tfgroup_type2 .tf_input {
     display: inline-block;
-    width: calc(100% - 80px);
 }
-
+.tfgroup_type2 fieldset{
+    width: 100%;
+    font-size: 0;
+}
+.tfgroup_type2 fieldset label{
+  width: calc(50% - 10px);
+  display: inline-block;
+}
+.tfgroup_type2 fieldset label:first-child{
+    margin-right: 20px;
+}
+.tfgroup_type2 .check_answer:last-child input[type="checkbox"]+span{
+  margin-top: 0;
+}
 .tfgroup_type3 {
     text-align: center;
 }
