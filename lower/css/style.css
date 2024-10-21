@@ -1297,7 +1297,7 @@ border-radius: 44px;
       background-size: 220px;
       }
       .tendency_top{     
-        background-position-x: 90%;
+        background-position-x: 100%;
       }
       
     .tendency .tit{  margin-top: 0; }
@@ -1696,7 +1696,7 @@ border-radius: 44px;
 }
 @media screen and (max-width:480px){
     .tendency_top{
-        background-size: 150px;
+        background-size: 120px;
     }
     .box_tendency {
         background-size: 300px;
@@ -3012,3 +3012,4 @@ overflow: hidden;
     }
     
 }
+
