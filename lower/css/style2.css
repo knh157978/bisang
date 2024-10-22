@@ -242,7 +242,7 @@ body.bg_test {
 .answer .wrap_con {
     display: block;
     width: 100%;
-    padding: 0 18%;
+    padding: 0 15%;
 }
 
 .answer .etc {
@@ -381,7 +381,6 @@ body.bg_test {
     max-width: 100%;
 }
 
-
 .test_btm .nav {
     display: flex;
     justify-content: center;
@@ -409,6 +408,7 @@ body.bg_test {
 
 
 /* INPUT 스타일 */
+
 .check_answer input[type="checkbox"] {
     display: none;
 }
@@ -429,7 +429,7 @@ body.bg_test {
     cursor: pointer;
 }
 
-.check_answer:last-child input[type="checkbox"]+span {
+.wrap_con fieldset>.check_answer:last-child input[type="checkbox"]+span {
     margin-top: 80px;
     margin-bottom: 0;
 }
@@ -457,8 +457,6 @@ body.bg_test {
     box-sizing: border-box;
 }
 
-
-
 .hide {
     text-indent: -9999px;
     overflow: hidden;
@@ -470,40 +468,71 @@ body.bg_test {
     line-height: 0;
 }
 
-.tfgroup_type1 label {
-    display: block;
+.tfgroup_type1_txt {
+    margin-bottom: 20px;
     font-weight: 400;
     font-size: 24px;
-    margin-bottom: 35px;
 }
 
-
-.tfgroup_type2 li {
+.tfgroup_type1 {
     display: flex;
-    margin-bottom: 10px;
+    align-items: center;
+    gap: 20px;
 }
 
-.tfgroup_type2 li * {
-    vertical-align: middle;
-}
-
-.tfgroup_type2 li:last-child {
-    margin-bottom: 0;
-}
-
-.tfgroup_type2 label {
+.tfgroup_type1 label {
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    padding-right: 15px;
     font-weight: 400;
     font-size: 40px;
     line-height: 80px;
-
+    flex-shrink: 0;
 }
 
-.tfgroup_type2 .tf_input {
-    display: inline-block;
-    width: calc(100% - 80px);
+.tfgroup_type1>div {
+    display: flex;
+    align-items: center;
+}
+
+.tfgroup_type1 span {
+    flex-shrink: 0;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.tfgroup_type2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.tfgroup_type2>div {
+    display: flex;
+    align-items: center;
+}
+
+.tfgroup_type2 label.type2_label {
+    padding-right: 15px;
+    font-weight: 400;
+    font-size: 40px;
+    flex-shrink: 0;
+}
+
+.tfgroup_type2 div .check_answer {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.tfgroup_type2 div .check_answer:last-child {
+    margin-right: 0;
+}
+
+.tfgroup_type2 div .check_answer span {
+    margin-bottom: 0;
+}
+
+.tfgroup_type2 div .check_answer input[type="checkbox"]:checked+span {
+    background-size: 25px 18px;
 }
 
 .tfgroup_type3 {
@@ -573,7 +602,7 @@ body.bg_test {
 }
 
 .test_btm .btn_send.gray {
-    background-color: #f4f4f5!important;
+    background-color: #f4f4f5 !important;
     color: #9b9b9b;
 }
 
@@ -767,7 +796,8 @@ body.bg_test {
     }
 
     .check_answer input[type="checkbox"]:checked+span {
-        background-size: 28px 21px;
+        background-size: 25px 18px;
+        background-position: 10px 50%;
     }
 
     .tf_input {
@@ -776,20 +806,17 @@ body.bg_test {
     }
 
     .tfgroup_type1 label {
-        font-size: 20px;
-        margin-bottom: 20px;
+        padding-right: 10px;
+        font-size: 30px;
     }
 
-    .tfgroup_type2 label {
-        width: 60px;
-        height: 65px;
-        font-size: 35px;
-        line-height: 65px;
-
+    .tfgroup_type2 label.type2_label {
+        padding-right: 10px;
+        font-size: 30px;
     }
 
-    .tfgroup_type2 .tf_input {
-        width: calc(100% - 60px);
+    .tfgroup_type2 div .check_answer {
+        margin-right: 5px;
     }
 
     .tfgroup_type3 .tf_input {
@@ -930,10 +957,12 @@ body.bg_test {
         top: initial;
         right: initial;
         transform: initial;
-        padding: 0 30px;  
+        padding: 0 30px;
     }
 
-    .test_title .etc_info.mgt-10 {margin-top:-10px;}
+    .test_title .etc_info.mgt-10 {
+        margin-top: -10px;
+    }
 
     .test_title .etc_info>* {
         margin-left: 0;
@@ -1034,7 +1063,8 @@ body.bg_test {
 
 
     /* INPUT 스타일 */
-    .check_answer:last-child input[type="checkbox"]+span {
+
+    .wrap_con fieldset>.check_answer:last-child input[type="checkbox"]+span {
         margin-top: 50px;
     }
 
@@ -1062,9 +1092,6 @@ body.bg_test {
 @media (max-width: 420px) {
 
     /********** HEADER 내용 **********/
-    .test_title .etc_info {
-        padding: 0 0 0 20px;
-    }
 
     .test_title .etc_info .btn_view {
         padding: 0 8px;
@@ -1137,7 +1164,7 @@ body.bg_main1 {
     display: flex;
     align-items: center;
     position: relative;
-    z-index:100;
+    z-index: 100;
     width: 387px;
     padding: 110px 0 50px 0;
 }
@@ -1264,7 +1291,7 @@ body.bg_main1 {
     text-align: center;
 }
 
-.wrap_main .left fieldset .btn_start.faq{
+.wrap_main .left fieldset .btn_start.faq {
     font-weight: 400;
     margin-top: 20px;
 }

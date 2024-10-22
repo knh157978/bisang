@@ -336,3 +336,14 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 .lower .faq_question li.on a{
     color:#0B9B9B
 }
+
+.lower .tfgroup_type2 div .check_answer input[type="checkbox"]:checked+span {
+    background-size: 25px 18px;
+}
+
+@media (max-width: 900px) {
+    .lower .check_answer input[type="checkbox"]:checked+span {
+        background-size: 25px 18px;
+        background-position: 10px 50%;
+    }
+}
