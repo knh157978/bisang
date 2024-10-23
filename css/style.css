@@ -2060,6 +2060,7 @@ height: 12px;
     box-shadow: 0px 4px 11.3px rgba(0, 0, 0, 0.25);
     border-radius:0 0 80px 80px;
     height: 80%;
+    min-height: 630px;
 }
 .lgmWrap .input_info .info_txt{
     font-weight: 500;
@@ -2497,6 +2498,9 @@ body.lower .alert_pop .pop_con .btn_area a.end {
         top:20px;
         width: 35px;
         background-size: 35px;
+    }
+    .lgmWrap .input_info {
+        min-height: 500px;
     }
     .lgmWrap .input_info .info_txt .hello{
         padding-top: 15%;
