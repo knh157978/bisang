@@ -2590,9 +2590,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 
 @media (max-height: 600px){
-    .lgmWrap .input_info{
-        height:600px;
-    }
+
     .lgmWrap .btn_area{
         padding-bottom: 30px;
     }
