@@ -975,7 +975,7 @@ overflow-y: auto;
     right: 0px;
 }
 .answer_area {
-    width:705px;
+    width:100%;
     margin: 30px auto ;
     height: calc(100% - 200px);
 }
@@ -983,6 +983,10 @@ overflow-y: auto;
 .answer_list {
   height: 100%;  
   overflow: auto;
+}
+.answer_list dl{
+    width: 705px;
+    margin: 0 auto;
 }
 .answer_list dt{
     padding: 30px 30px 30px 130px;
@@ -1473,7 +1477,7 @@ border-radius: 44px;
         background-size: 230px;
       }
       
-    .answer_area {
+    .answer_area dl{
         width: 95%;
     }
     .answer_list dt .time{

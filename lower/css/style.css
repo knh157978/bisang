@@ -120,6 +120,28 @@
     border: 1px solid #C0DEFF;
     color: #047AFF;
 }
+.mail_area{
+    font-weight: 600;
+    color:#000;
+    font-size: 20px;
+    text-align: center;
+    padding: 60px 0 0;
+}
+.align_center {
+    text-align: center;
+    padding-top: 20px;
+}
+.align_center button{
+    border: 0;
+    background: #2395FF;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    width: 105px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+}
 .resultWrap .tit a.btn_share:before{
     display: inline-block;
     content: '';
@@ -837,6 +859,26 @@ background: url(../img/ico_insta.png) no-repeat;
     text-align: center;
     padding-top: 25px;
 }
+.pop_share select{
+    border: 0;
+    border-radius: 10px;
+    height: 50px;
+    width: 20%;
+    background: url(../img/blue_arr.png) no-repeat 90% 50%; 
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    padding:  0 10px;
+    font-size: 18px;
+    color: #2E2F33;
+    position: relative;
+    border: 1px solid #72D5FF ;
+    
+}
+
+.pop_share .url input::placeholder{
+    opacity: .2;
+}
 .pop_share .url input{
     width: 338px;
     border: 1px solid #E1E1E1 ;
@@ -845,6 +887,13 @@ background: url(../img/ico_insta.png) no-repeat;
     font-size: 18px;
     padding: 0 10px;
     color: #1C1C1C;
+    border: 1px solid #72D5FF ;
+    box-sizing: border-box;
+}
+.pop_share .url span{
+    font-weight: 600;
+    color: #000;
+    font-size: 30px;
 }
 .pop_share .url button{
     border: 0;
@@ -1013,7 +1062,7 @@ overflow-y: auto;
     right: 0px;
 }
 .answer_area {
-    width:705px;
+    width:100%;
     margin: 30px auto ;
     height: calc(100% - 200px);
 }
@@ -1021,6 +1070,10 @@ overflow-y: auto;
 .answer_list {
   height: 100%;  
   overflow: auto;
+}
+.answer_list dl{
+    width: 705px;
+    margin: 0 auto;
 }
 .answer_list dt{
     padding: 30px 30px 30px 130px;
@@ -1516,7 +1569,7 @@ border-radius: 44px;
         background-size: 230px;
       }
       
-    .answer_area {
+    .answer_area dl {
         width: 95%;
     }
     .answer_list dt .time{
@@ -1694,6 +1747,9 @@ border-radius: 44px;
     }
 }
 @media screen and (max-width:480px){
+    .pop_share select {
+        font-size: 16px;
+    }
     .tendency_top{
         background-size: 140px;
     }
@@ -2590,9 +2646,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 
 @media (max-height: 600px){
-    .lgmWrap .input_info{
-        height:600px;
-    }
+
     .lgmWrap .btn_area{
         padding-bottom: 30px;
     }
