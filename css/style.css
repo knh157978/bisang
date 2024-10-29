@@ -1708,6 +1708,9 @@ border-radius: 44px;
         padding-left: 20px;
         height: 60px;
     }
+    .answer_area{
+        height: calc(100% - 130px);
+    }
     .ai_tit .btn_close {
         right: 20px;
         width: 20px;
