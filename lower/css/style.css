@@ -1063,7 +1063,7 @@ overflow-y: auto;
 }
 .answer_area {
     width:100%;
-    height: calc(100% - 145px);
+    height: calc(100% - 147px);
 }
 
 .answer_list {
