@@ -1101,6 +1101,22 @@ position: relative;
 line-height: 1.35em;
 padding-right: 20px; */
 }
+.answer_list .mCSB_scrollTools {
+  opacity: 1;
+  right: 5px;
+}
+.answer_list .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+ background: #C5C5C5;
+ width: 8px;
+}
+.answer_list .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail{
+    background: #F6F6FA;
+}
+.answer_list .mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,.answer_list .mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar  {
+    background: #C5C5C5;
+    filter:none
+    
+}
 .answer_list dt .photo{
     display: inline-block;
     width: 105px;
