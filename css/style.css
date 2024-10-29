@@ -1101,6 +1101,9 @@ position: relative;
 line-height: 1.35em;
 padding-right: 20px; */
 }
+.answer_list {
+    -webkit-overflow-scrolling: touch;
+}
 .answer_list .mCSB_scrollTools {
   opacity: 1;
   right: 5px;
