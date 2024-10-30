@@ -1080,6 +1080,7 @@ overflow-y: auto;
     color: #000;
     position: relative;
     line-height: 1.5em;
+    min-height: 165px;
 /* 06.white */
 background: #fff;
 border-radius: 0 30px 30px 30px;
