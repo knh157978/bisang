@@ -336,7 +336,9 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 .lower .faq_question li.on a{
     color:#0B9B9B
 }
-
+.lower .faq_question li.on:after {
+    background: url(../img/lower/faq_arr_on.png);
+}
 .lower .tfgroup_type2 div .check_answer input[type="checkbox"]:checked+span {
     background-size: 25px 18px;
 }
