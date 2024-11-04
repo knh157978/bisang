@@ -1180,14 +1180,27 @@ margin-left: 30px;
     background: #FF732A;
 }
 
-
+.invitation_top{
+    max-width: 768px;
+    margin: 30px auto 20px auto;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+   line-height: 1.5;
+}
+.invitation_top .bold{
+    font-weight: 700;
+}
+.invitation_top .blue{
+    color: #047AFF;
+    font-weight: 700;
+}
 .invitation_wrap{   
     background: url(../img/bg_Invitation.png)  50% 100% no-repeat;
     background-size: cover;
     max-width: 768px;
     margin: 0 auto;
     position: relative;
-    height: 100%;
 }
 .invitation_wrap .btn_close{
   display: block;
@@ -1216,7 +1229,8 @@ margin-left: 30px;
     line-height: 51px;
     font-weight: 600;
 /* gradient02 */
-background: linear-gradient(90deg, #199ED7 0%, #7E69FF 100%);
+/* background: linear-gradient(90deg, #199ED7 0%, #7E69FF 100%); */
+background: #047AFF;
 border-radius: 44px;
  font-size:26px ;
  color: #fff;
@@ -1291,6 +1305,38 @@ border-radius: 44px;
     vertical-align:middle ;
     margin-right: 5px;
    margin-top: -4px;
+ }
+ footer{
+    display: flex;
+    padding:40px 20px ;
+    max-width: 768px;
+    margin: 0 auto;
+    line-height: 1.5;
+    color:#9ba5b3
+ }
+ footer a{
+    color:#9ba5b3
+ }
+ footer .logo{
+    width: 87px;
+    flex-shrink: 0;
+    
+ }
+ footer .right{
+    font-size: 14px;
+    letter-spacing: -1.5px;
+    word-break: keep-all;
+    padding-left: 20px;
+ }
+ footer .dark_gray{
+    display: inline-block;
+    width: 45px;
+    height: 17px;
+    color:#fff;
+    font-size: 12px;
+    background: #545454;
+    line-height: 17px;
+    text-align: center;
  }
  @media screen and (max-width:1845px) {
     .my_info>li .standard{
