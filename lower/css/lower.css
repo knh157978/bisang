@@ -165,7 +165,9 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 .lower .invitation_wrap {
     background: url(../img/lower/bg_Invitation.png) 50% 100% no-repeat;
 }
-
+.lower .invitation_top .blue{
+   color:#0B9B9B
+}
 .lower .invitation_txt {
     background: #0B9B9B
 }
