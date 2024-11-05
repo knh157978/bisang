@@ -3026,7 +3026,6 @@ overflow: hidden;
     font-size: 24px;
     text-align: center;
     overflow: hidden;
-    height: 310px;
     padding: 20px;
     
 }
@@ -3048,12 +3047,13 @@ overflow: hidden;
      color: #fff;
 }
 .landing-bottom .my_info>div .book{
-    max-height:67%;
+ 
+    width: 100%;
     margin: 0 auto ;
 }
 .landing-bottom .my_info>div .book img{
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 
 @media (max-width:1300px){

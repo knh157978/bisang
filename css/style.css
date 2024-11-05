@@ -3026,8 +3026,8 @@ overflow: hidden;
     font-size: 24px;
     text-align: center;
     overflow: hidden;
-    height: 310px;
-    padding: 20px;
+    padding: 20px 0;
+    height: 300px;
     
 }
 .landing-bottom .my_info>div:last-child{
@@ -3052,8 +3052,11 @@ overflow: hidden;
     margin: 0 auto ;
 }
 .landing-bottom .my_info>div .book img{
-    height: 100%;
-    width: auto;
+   width: auto;
+    max-width: 100%;
+     height:  100%; 
+   
+
 }
 
 @media (max-width:1300px){
