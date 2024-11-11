@@ -2645,6 +2645,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
     }
     .input_field input{
         height: 70px;
+        font-size: 18px;
     }
     .lgmWrap .input_info .info_txt .hello{
         font-size: 40px;
