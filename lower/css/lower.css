@@ -13,11 +13,13 @@ body.lower .alert_pop .pop_con .btn_area a.end {
 
 .lower .lgmWrap .btn_prev {
     background: url(../img/lower/lgm_prev.png) no-repeat;
+    background-size: 100%;
 }
 
 .lower .lgmWrap .btn_close {
 
     background: url(../img/lower/lgm_x.png) no-repeat;
+    background-size: 100%;
 }
 
 .lower .lgmWrap .process span.on {
