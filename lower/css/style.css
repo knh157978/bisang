@@ -3051,15 +3051,24 @@ overflow: hidden;
     margin: 0 auto ;
     overflow: hidden;
 }
+
 .landing-bottom .my_info>div .book img{
   width: auto;
   max-width: 100%;
-  max-height:200px; 
-   
-
+  max-height:200px;   
 }
-
-@media (max-width:1300px){
+@media  (max-height:720px) {
+    .landing-bottom {
+        padding: 30px;
+    }
+    .landing-bottom .my_info>div{
+        height: 230px;
+    }
+    .landing-bottom .my_info>div .book img{
+        max-height: 140px;
+    }
+}
+@media (max-width:1024px) {
     .landing-top .my_info,.landing-bottom .my_info{
         display: block;
         width: 60%;
@@ -3075,6 +3084,7 @@ overflow: hidden;
     }
    
 }
+
 @media (max-width:830px){
     .landing-top .my_info,.landing-bottom .my_info{
         width: 80%;

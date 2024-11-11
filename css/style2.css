@@ -199,7 +199,7 @@ body.bg_test {
     display: flex;
     flex-direction: row;
     position: relative;
-    min-height: calc(100vh - 464px);
+    min-height: calc(100vh - 564px);
     padding: 30px 0;
 }
 
@@ -416,7 +416,7 @@ body.bg_test {
 .check_answer input[type="checkbox"]+span {
     display: block;
     width: 100%;
-    height: 64px;
+    height: 50px;
     margin: 0 auto 10px auto;
     color: #000;
     background: #FFF;
@@ -424,13 +424,13 @@ body.bg_test {
     border-radius: 32px;
     font-weight: 400;
     font-size: 28px;
-    line-height: 64px;
+    line-height: 50px;
     text-align: center;
     cursor: pointer;
 }
 
 .wrap_con fieldset>.check_answer:last-child input[type="checkbox"]+span {
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 0;
 }
 
@@ -803,11 +803,11 @@ body.bg_test {
 
     /* INPUT 스타일 */
     .check_answer input[type="checkbox"]+span {
-        height: 55px;
+        height: 45px;
         border-radius: 27px;
         font-weight: 400;
         font-size: 24px;
-        line-height: 55px;
+        line-height: 45px;
     }
 
     .check_answer input[type="checkbox"]:checked+span {
