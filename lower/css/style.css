@@ -89,7 +89,7 @@
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom:220px;
+    bottom:180px;
     right: 30px;
     z-index: 1;
 }
@@ -645,9 +645,9 @@ border: 1px solid #e1e1e1;
  }
  .btn_change{
     display: block;
-    height: 70px;
-    line-height: 70px;
-    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
     background:#737373 ;
     color: #fff;
     text-align: center;
@@ -655,8 +655,8 @@ border: 1px solid #e1e1e1;
     position:fixed;
     text-indent: -47px;
     right:10%;
-    bottom:140px;
-    width: 350px;
+    bottom:100px;
+    width: 300px;
     padding-left: 20px;
     box-shadow: 4px 5px 10px rgba(0,0,0,.2);
     z-index: 1;
@@ -1432,7 +1432,6 @@ border-radius: 44px;
     .my_info>li:first-child {
         font-size: 55px;
     }
-    .btn_change{font-size: 25px;}
     .btn_qa{
         font-size: 16px;
     }
@@ -1483,10 +1482,10 @@ border-radius: 44px;
 }
 @media screen and (max-width:1110px){    
     .btn_change{
-        bottom: 100px;
+        bottom: 50px;
     }
     .btn_top{
-        bottom: 180px;
+        bottom: 120px;
     }
     .btn_qa{
         font-size: 15px;

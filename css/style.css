@@ -89,7 +89,7 @@
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom:220px;
+    bottom:180px;
     right: 30px;
     z-index: 1;
 }
@@ -1485,7 +1485,7 @@ border-radius: 44px;
         bottom: 50px;
     }
     .btn_top{
-        bottom: 180px;
+        bottom: 120px;
     }
     .btn_qa{
         font-size: 15px;
