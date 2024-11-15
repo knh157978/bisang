@@ -3153,6 +3153,7 @@ overflow: hidden;
     {  top:10px;
         bottom:10px;
         height: auto;
+        overflow: auto;
     }
     
 }
