@@ -148,6 +148,7 @@ body.bg_test {
     display: inline-block;
     font-weight: 700;
     font-size: 24px;
+    width: 160px;
 }
 
 .test_title .etc_info .time.red {
@@ -783,6 +784,7 @@ body.bg_test {
     .test_title .etc_info .time {
         font-size: 16px;
         margin-left: 0;
+        width: 110px;
     }
 
     .notice_title {
