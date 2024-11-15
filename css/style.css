@@ -2390,6 +2390,8 @@ position: relative;
     color: #2E2F33;
     font-weight: 700;
     text-align-last: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
 }
 .input_field.type1 {
     width: 940px;
