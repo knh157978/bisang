@@ -2371,6 +2371,9 @@ position: relative;
     font-size: 26px;
     color: #2E2F33;
     font-weight: 700;
+    text-align-last: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
 }
 .mr20{
     margin-right: 20px;
