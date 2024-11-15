@@ -2293,6 +2293,7 @@ position: relative;
     font-size: 24px;
     font-weight: 700;
     margin-left: 20px;
+    cursor: pointer;
 }
 .lgmWrap .btn_area{
     text-align: center;
@@ -2642,6 +2643,7 @@ body.lower .alert_pop .pop_con .btn_area a.end {
         font-size: 18px;
         height: 46px;
         line-height: 46px;
+        cursor: pointer;
     }
     .input_field input{
         height: 70px;
