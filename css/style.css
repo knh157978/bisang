@@ -2389,6 +2389,7 @@ position: relative;
     font-size: 26px;
     color: #2E2F33;
     font-weight: 700;
+    text-align-last: center;
 }
 .input_field.type1 {
     width: 940px;
@@ -3083,6 +3084,9 @@ overflow: hidden;
     }
     .landing_box{
         overflow: auto;
+        height: 90%;
+        top:5%;
+        bottom: 5%;
     }
    
 }
@@ -3153,7 +3157,6 @@ overflow: hidden;
     {  top:10px;
         bottom:10px;
         height: auto;
-        overflow: auto;
     }
     
 }
